@@ -1,16 +1,20 @@
 PODS:
   - RevealingSplashView (0.6.0)
+  - SwiftyBeaver (1.9.1)
 
 DEPENDENCIES:
   - RevealingSplashView
+  - SwiftyBeaver
 
 SPEC REPOS:
   trunk:
     - RevealingSplashView
+    - SwiftyBeaver
 
 SPEC CHECKSUMS:
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
+  SwiftyBeaver: a1f5691458561414bcfab51874b2b7445451602b
 
-PODFILE CHECKSUM: bcd035c15cf8f3c7928db24b6c96eacb2befe2aa
+PODFILE CHECKSUM: 1a863723d4c61cbdd15bad59efc882bb62eb0569
 
 COCOAPODS: 1.9.3

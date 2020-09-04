@@ -6,5 +6,6 @@ target 'FlySound Bar' do
   use_frameworks!
 
   # Pods for FlySound Bar
+  pod 'SwiftyBeaver'
   pod 'RevealingSplashView'
 end

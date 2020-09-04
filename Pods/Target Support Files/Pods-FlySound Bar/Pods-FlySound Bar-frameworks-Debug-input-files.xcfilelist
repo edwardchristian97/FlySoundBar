@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework
+${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework
