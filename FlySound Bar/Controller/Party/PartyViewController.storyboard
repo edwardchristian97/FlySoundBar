@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qse-fa-Ugu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Parties-->
+        <scene sceneID="Fg1-KQ-Yb7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PG-5N-zuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="hJa-Lu-C7b" customClass="PartyViewController" customModule="Fly_Sound_Bar" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nsU-Df-IpP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IeC-Fx-UqI">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hJa-Lu-C7b" id="6QS-ss-9Gm"/>
+                                    <outlet property="delegate" destination="hJa-Lu-C7b" id="teh-yY-b5p"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IeC-Fx-UqI" firstAttribute="leading" secondItem="EPh-Yj-qTC" secondAttribute="leading" id="OIp-vm-OiK"/>
+                            <constraint firstItem="EPh-Yj-qTC" firstAttribute="trailing" secondItem="IeC-Fx-UqI" secondAttribute="trailing" id="ZAM-oH-Xbf"/>
+                            <constraint firstItem="EPh-Yj-qTC" firstAttribute="bottom" secondItem="IeC-Fx-UqI" secondAttribute="bottom" id="c5t-KY-0OT"/>
+                            <constraint firstItem="IeC-Fx-UqI" firstAttribute="top" secondItem="EPh-Yj-qTC" secondAttribute="top" id="xo5-Sb-neK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EPh-Yj-qTC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Parties" id="D6n-6J-Cxo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gXH-gE-7sB">
+                            <color key="tintColor" name="FlySoundGreen"/>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="hJa-Lu-C7b" id="bJD-5t-VBw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="IeC-Fx-UqI" id="rLs-8v-SvF"/>
+                        <segue destination="8tF-8K-sYC" kind="show" identifier="PartyTappedSegue" id="CSx-me-LFq"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="597.10144927536237" y="-198.21428571428569"/>
+        </scene>
+        <!--Parties-->
+        <scene sceneID="ymr-bU-K27">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHC-Sf-hUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qse-fa-Ugu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Parties" image="partyIcon" id="tM3-AV-cwq">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="gmp-OT-hsR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hJa-Lu-C7b" kind="relationship" relationship="rootViewController" id="CyR-Pc-c8H"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-313.04347826086956" y="-198.21428571428569"/>
+        </scene>
+        <!--Party Details View Controller-->
+        <scene sceneID="uy0-UF-yaW">
+            <objects>
+                <viewController id="8tF-8K-sYC" customClass="PartyDetailsViewController" customModule="Fly_Sound_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uZj-3Y-unl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raT-bN-TBC">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="raT-bN-TBC" firstAttribute="centerX" secondItem="uZj-3Y-unl" secondAttribute="centerX" id="aJl-jZ-a03"/>
+                            <constraint firstItem="raT-bN-TBC" firstAttribute="centerY" secondItem="uZj-3Y-unl" secondAttribute="centerY" id="cuE-TR-mUX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ON4-3V-ZOa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fc9-Xt-XgO"/>
+                    <connections>
+                        <outlet property="testLabel" destination="raT-bN-TBC" id="4oP-d7-g4u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0z-ae-cbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="-198"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="partyIcon" width="24" height="24"/>
+        <namedColor name="FlySoundGreen">
+            <color red="0.056000001728534698" green="0.5" blue="0.335999995470047" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

@@ -14,14 +14,30 @@ class PartyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setupNavigationBar()
         setupRevealingSplashView()
-        fetchParties()
+        registerCells()
+        checkEmptyList()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.separatorStyle = .none
     }
 }
 
 // MARK: UI Setup
 extension PartyViewController {
+
+    private func registerCells() {
+        tableView.register(cell: PartyCell.self)
+    }
 
     //    private func setupNavigationBar() {
     //        let imageView = UIImageView(image: UIImage(named: "BarIcon"))
@@ -43,12 +59,20 @@ extension PartyViewController {
 // MARK: Functions
 extension PartyViewController {
 
-    private func fetchParties() {
-        checkEmptyList()
+    private func checkEmptyList() {
+        if viewModel.numberOfRows == 0 {
+            tableView.setEmptyList(withMessage: "Nu exista niciun party inregistrat.\nApasa pe + pentru a adauga un party.")
+        } else {
+            tableView.resetList()
+        }
     }
 
-    private func checkEmptyList() {
-        if viewModel.numberOfRows == 0 { tableView.setEmptyList(withMessage: "Nu exista party-uri")}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let title = sender as? String {
+            if let controller = segue.destination as? PartyDetailsViewController {
+                controller.test = title
+            }
+        }
     }
 }
 
@@ -59,6 +83,7 @@ extension PartyViewController {
         let registerController = RegisterPartyViewController.instantiate()
         registerController.onClose = { [weak self] in
             self?.dismiss(animated: true, completion: nil)
+            self?.checkEmptyList()
         }
         present(viewController: registerController)
     }
@@ -67,11 +92,33 @@ extension PartyViewController {
 // MARK: UITableView Data Source
 extension PartyViewController: UITableViewDataSource {
 
-    func numberOfSections(in tableView: UITableView) -> Int { viewModel.numberOfSections }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        viewModel.numberOfSections
+    }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { viewModel.numberOfRows }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.numberOfRows
+    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        let cell: PartyCell = tableView.dequeue(for: indexPath)
+        cell.setup(party: viewModel.partyAt(index: indexPath.row))
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            viewModel.removePartyAt(index: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            checkEmptyList()
+        }
+    }
+}
+
+// MARK: UITable View Delegate
+extension PartyViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "PartyTappedSegue", sender: viewModel.partyAt(index: indexPath.row).name)
     }
 }

@@ -8,18 +8,45 @@ import Foundation
 final class PartyViewModel {
 
     private var context = CoreDataStack.shared.managedObjectContext
-    private var parties: [Party]?
-
-    init() {
-        setParties()
-    }
-
-    private func setParties() {
+    private var parties: [Party] {
         do {
-            parties = try context.fetch(Party.fetchRequest())
+            return try context.fetch(Party.fetchRequest())
         } catch(let error) {
             log.error(error.localizedDescription)
-            parties = []
+            return []
+        }
+    }
+
+}
+
+// MARK: Functions
+extension PartyViewModel {
+
+    func partyAt(index: Int) -> Party {
+        parties[index]
+    }
+
+    func removePartyAt(index: Int) {
+        context.delete(partyAt(index: index))
+        do {
+            try context.save()
+        } catch(let error) {
+            log.error(error.localizedDescription)
+        }
+    }
+
+    func registerParty(_ partyDTO: PartyDTO) {
+        let party = Party(context: context)
+        party.id = partyDTO.id
+        party.name = partyDTO.name
+        party.date = partyDTO.date
+        party.image = partyDTO.image
+
+        do {
+            try context.save()
+            log.info("Registered Party: \(party.name ?? "-")")
+        } catch(let error) {
+            log.error(error.localizedDescription)
         }
     }
 }
@@ -28,5 +55,5 @@ final class PartyViewModel {
 extension PartyViewModel {
 
     var numberOfSections: Int { 1 }
-    var numberOfRows: Int { parties?.count ?? 0 }
+    var numberOfRows: Int { parties.count }
 }

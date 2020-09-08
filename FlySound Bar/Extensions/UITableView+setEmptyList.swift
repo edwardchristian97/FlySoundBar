@@ -8,7 +8,7 @@ import UIKit
 extension UITableView {
 
     func setEmptyList(withMessage message: String) {
-        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: bounds.size.width, height: bounds.size.height))
         messageLabel.text = message
         messageLabel.textColor = .gray
         messageLabel.numberOfLines = 0
@@ -16,12 +16,13 @@ extension UITableView {
         messageLabel.font = .systemFont(ofSize: 20)
         messageLabel.sizeToFit()
 
-        self.backgroundView = messageLabel
-        self.separatorStyle = .none
+        backgroundView = messageLabel
+        separatorStyle = .none
     }
 
     func resetList() {
-        self.backgroundView = nil
-        self.separatorStyle = .singleLine
+        backgroundView = nil
+        separatorStyle = .singleLine
+        reloadData()
     }
 }

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5n2-cw-q09">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register Drink View Controller-->
+        <scene sceneID="dYW-iX-D8b">
+            <objects>
+                <viewController id="5n2-cw-q09" customClass="RegisterDrinkViewController" customModule="Fly_Sound_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zgd-4X-wnL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="fNb-N7-I1A">
+                                <rect key="frame" x="47" y="150" width="320" height="596"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nume Drink" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2l-gv-Pxz">
+                                        <rect key="frame" x="20" y="0.0" width="280" height="50"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GZT-1c-5a4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                    </textField>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCq-Ve-an2">
+                                        <rect key="frame" x="0.0" y="190" width="320" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="5n2-cw-q09" id="iY6-4V-Pl8"/>
+                                            <outlet property="delegate" destination="5n2-cw-q09" id="tJr-Ij-uPq"/>
+                                        </connections>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFK-vA-OBp" customClass="RoundButton" customModule="Fly_Sound_Bar" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="546" width="240" height="50"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SbP-Em-t68"/>
+                                        </constraints>
+                                        <state key="normal" title="Adauga">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="5n2-cw-q09" eventType="touchUpInside" id="aIu-lD-iwb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="s2l-gv-Pxz" firstAttribute="leading" secondItem="fNb-N7-I1A" secondAttribute="leading" constant="20" id="KiA-TM-RVE"/>
+                                    <constraint firstItem="QFK-vA-OBp" firstAttribute="leading" secondItem="fNb-N7-I1A" secondAttribute="leading" constant="40" id="UAa-Pp-XC5"/>
+                                    <constraint firstAttribute="trailing" secondItem="QFK-vA-OBp" secondAttribute="trailing" constant="40" id="bj3-ch-Iez"/>
+                                    <constraint firstAttribute="trailing" secondItem="s2l-gv-Pxz" secondAttribute="trailing" constant="20" id="vdW-bS-rSN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fNb-N7-I1A" firstAttribute="centerX" secondItem="Zgd-4X-wnL" secondAttribute="centerX" id="hHu-jb-Pms"/>
+                            <constraint firstItem="fNb-N7-I1A" firstAttribute="centerY" secondItem="Zgd-4X-wnL" secondAttribute="centerY" id="wU8-nv-t1Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PX9-LR-Cte"/>
+                    </view>
+                    <connections>
+                        <outlet property="drinkCategoryPicker" destination="gCq-Ve-an2" id="kX4-l7-hYy"/>
+                        <outlet property="picker" destination="gCq-Ve-an2" id="4Cz-9b-HZn"/>
+                        <outlet property="textField" destination="s2l-gv-Pxz" id="km6-KH-wdU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsC-9Y-xgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="58"/>
+        </scene>
+    </scenes>
+</document>

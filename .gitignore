@@ -1,0 +1,13 @@
+*.mode1v3
+*.perspectivev3
+*.pbxuser
+.DS_Store
+build/
+Pods/
+FlySound Bar.xcodeproj/xcuserdata
+FlySound Bar.xcworkspace/xcuserdata
+FlySound Bar.xcodeproj/project.xcworkspace/xcuserdata
+sonar-reports
+coverage_reports
+DerivedData
+

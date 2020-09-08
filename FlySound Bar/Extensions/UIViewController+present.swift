@@ -9,7 +9,7 @@ extension UIViewController {
 
     func present(viewController: UIViewController) {
         let closeButton = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(closeButtonTapped))
-        closeButton.tintColor = .white
+        closeButton.tintColor = UIColor(named: "FlySoundGreen")
         viewController.navigationItem.leftBarButtonItem = closeButton
         present(viewController.navEmbedded, animated: true, completion: nil)
     }

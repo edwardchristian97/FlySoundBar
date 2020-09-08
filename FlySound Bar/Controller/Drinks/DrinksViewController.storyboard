@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ueI-2z-9Zu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drinks-->
+        <scene sceneID="sOq-de-jPh">
+            <objects>
+                <viewController id="rUg-d3-FAx" customClass="DrinksViewController" customModule="Fly_Sound_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fPY-AM-EOh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lgv-tj-p6M">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rUg-d3-FAx" id="BZY-BM-fol"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vx7-6C-3gr" firstAttribute="bottom" secondItem="lgv-tj-p6M" secondAttribute="bottom" id="B6D-2S-AKn"/>
+                            <constraint firstItem="lgv-tj-p6M" firstAttribute="top" secondItem="vx7-6C-3gr" secondAttribute="top" id="Yda-47-rxY"/>
+                            <constraint firstItem="lgv-tj-p6M" firstAttribute="leading" secondItem="vx7-6C-3gr" secondAttribute="leading" id="f2W-Fa-Lv6"/>
+                            <constraint firstItem="vx7-6C-3gr" firstAttribute="trailing" secondItem="lgv-tj-p6M" secondAttribute="trailing" id="iGN-Y9-O1B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vx7-6C-3gr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Drinks" id="l2D-nZ-3ll">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pwF-UL-5As">
+                            <color key="tintColor" name="FlySoundGreen"/>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="rUg-d3-FAx" id="0w8-BC-pds"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="lgv-tj-p6M" id="KNX-J2-Irm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wU-DK-IOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.04347826086962" y="79.6875"/>
+        </scene>
+        <!--Drinks-->
+        <scene sceneID="yVO-Ml-Uc2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ueI-2z-9Zu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Drinks" image="drinksIcon" id="MEA-Yi-8lu"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="DMx-oF-Q1v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rUg-d3-FAx" kind="relationship" relationship="rootViewController" id="J5m-dy-m2V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="trZ-qq-ngk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="drinksIcon" width="24" height="24"/>
+        <namedColor name="FlySoundGreen">
+            <color red="0.056000001728534698" green="0.5" blue="0.335999995470047" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
