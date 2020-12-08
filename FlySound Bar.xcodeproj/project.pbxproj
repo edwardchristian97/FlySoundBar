@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2464216325025594000B6ACE /* UIViewController+present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464216225025594000B6ACE /* UIViewController+present.swift */; };
+		24642165250257D2000B6ACE /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24642164250257D2000B6ACE /* RoundButton.swift */; };
+		24642167250259A9000B6ACE /* UIViewController+hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24642166250259A9000B6ACE /* UIViewController+hideKeyboard.swift */; };
+		2464216C25026077000B6ACE /* PartyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464216B25026077000B6ACE /* PartyDTO.swift */; };
+		2464217125028EC7000B6ACE /* PartyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2464217025028EC7000B6ACE /* PartyCell.xib */; };
+		2464217325028F83000B6ACE /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464217225028F83000B6ACE /* PartyCell.swift */; };
+		2464217525029742000B6ACE /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464217425029742000B6ACE /* Date+Formatter.swift */; };
+		2464217725029835000B6ACE /* UIView+nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464217625029835000B6ACE /* UIView+nib.swift */; };
+		2464217925029852000B6ACE /* UITableView+dequeueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464217825029852000B6ACE /* UITableView+dequeueCell.swift */; };
+		2464217B25063766000B6ACE /* PartyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2464217A25063766000B6ACE /* PartyViewController.storyboard */; };
+		2464217E25063C65000B6ACE /* DrinksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2464217D25063C65000B6ACE /* DrinksViewController.storyboard */; };
+		2464218025063E5F000B6ACE /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464217F25063E5F000B6ACE /* DrinksViewController.swift */; };
+		2464218225063E83000B6ACE /* DrinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464218125063E83000B6ACE /* DrinksViewModel.swift */; };
+		2464218425063EB2000B6ACE /* DrinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464218325063EB2000B6ACE /* DrinkType.swift */; };
+		2464218825064300000B6ACE /* DrinksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2464218725064300000B6ACE /* DrinksCell.xib */; };
+		2464218A25064309000B6ACE /* DrinksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464218925064309000B6ACE /* DrinksCell.swift */; };
+		2464218C25065878000B6ACE /* DrinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464218B25065878000B6ACE /* DrinkData.swift */; };
+		2464218F25066D77000B6ACE /* RegisterDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464218E25066D77000B6ACE /* RegisterDrinkViewController.swift */; };
+		2464219125066D81000B6ACE /* RegisterDrinkViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2464219025066D81000B6ACE /* RegisterDrinkViewController.storyboard */; };
+		2464219325077174000B6ACE /* PartyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464219225077174000B6ACE /* PartyDetailsViewController.swift */; };
+		24810B432507D3EC00E71233 /* DrinksInventoryTableVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24810B422507D3EC00E71233 /* DrinksInventoryTableVIewController.swift */; };
+		24AEEE2C2508C4AE00E5A69A /* InventoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE2B2508C4AE00E5A69A /* InventoryViewModel.swift */; };
+		24AEEE2E2508C57C00E5A69A /* RegisterPartyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE2D2508C57C00E5A69A /* RegisterPartyViewModel.swift */; };
+		24AEEE302508C5BC00E5A69A /* RegisterDrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE2F2508C5BC00E5A69A /* RegisterDrinkViewModel.swift */; };
+		24AEEE322508E8E500E5A69A /* DataManagementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE312508E8E500E5A69A /* DataManagementViewModel.swift */; };
+		24AEEE3425096DB000E5A69A /* PartyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE3325096DB000E5A69A /* PartyDetailsViewModel.swift */; };
+		24DCDFBD24F929D900F3FFD2 /* UITableView+setEmptyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDFBC24F929D900F3FFD2 /* UITableView+setEmptyList.swift */; };
+		24DCDFBF24F92C0900F3FFD2 /* PartyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDFBE24F92C0900F3FFD2 /* PartyViewModel.swift */; };
+		24DCDFC224F92DFA00F3FFD2 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDFC124F92DFA00F3FFD2 /* CoreDataStack.swift */; };
+		24DCDFC524F92F7D00F3FFD2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDFC424F92F7D00F3FFD2 /* Log.swift */; };
+		24DCDFC824F9543800F3FFD2 /* RegisterPartyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DCDFC724F9543800F3FFD2 /* RegisterPartyViewController.storyboard */; };
+		24DCDFCA24F9547F00F3FFD2 /* RegisterPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDFC924F9547F00F3FFD2 /* RegisterPartyViewController.swift */; };
+		24DCDFCC24FBC1F300F3FFD2 /* UIViewController+instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDFCB24FBC1F300F3FFD2 /* UIViewController+instantiate.swift */; };
+		24E0E37124F8FD33009CA58F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0E37024F8FD33009CA58F /* AppDelegate.swift */; };
+		24E0E37324F8FD33009CA58F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0E37224F8FD33009CA58F /* SceneDelegate.swift */; };
+		24E0E37524F8FD33009CA58F /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0E37424F8FD33009CA58F /* PartyViewController.swift */; };
+		24E0E37824F8FD33009CA58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0E37624F8FD33009CA58F /* Main.storyboard */; };
+		24E0E37B24F8FD33009CA58F /* FlySound_Bar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24E0E37924F8FD33009CA58F /* FlySound_Bar.xcdatamodeld */; };
+		24E0E37D24F8FD35009CA58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E0E37C24F8FD35009CA58F /* Assets.xcassets */; };
+		24E0E38024F8FD35009CA58F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0E37E24F8FD35009CA58F /* LaunchScreen.storyboard */; };
+		24EF533C250A209500607786 /* String+attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF533B250A209500607786 /* String+attributed.swift */; };
+		3C28BED0AB4CCF78EE8D8746 /* Pods_FlySound_Bar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7870ABB8DA73DA8337F96EFD /* Pods_FlySound_Bar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2464216225025594000B6ACE /* UIViewController+present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+present.swift"; sourceTree = "<group>"; };
+		24642164250257D2000B6ACE /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		24642166250259A9000B6ACE /* UIViewController+hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+hideKeyboard.swift"; sourceTree = "<group>"; };
+		2464216B25026077000B6ACE /* PartyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDTO.swift; sourceTree = "<group>"; };
+		2464217025028EC7000B6ACE /* PartyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartyCell.xib; sourceTree = "<group>"; };
+		2464217225028F83000B6ACE /* PartyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		2464217425029742000B6ACE /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		2464217625029835000B6ACE /* UIView+nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+nib.swift"; sourceTree = "<group>"; };
+		2464217825029852000B6ACE /* UITableView+dequeueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+dequeueCell.swift"; sourceTree = "<group>"; };
+		2464217A25063766000B6ACE /* PartyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PartyViewController.storyboard; sourceTree = "<group>"; };
+		2464217D25063C65000B6ACE /* DrinksViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrinksViewController.storyboard; sourceTree = "<group>"; };
+		2464217F25063E5F000B6ACE /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
+		2464218125063E83000B6ACE /* DrinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewModel.swift; sourceTree = "<group>"; };
+		2464218325063EB2000B6ACE /* DrinkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkType.swift; sourceTree = "<group>"; };
+		2464218725064300000B6ACE /* DrinksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinksCell.xib; sourceTree = "<group>"; };
+		2464218925064309000B6ACE /* DrinksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksCell.swift; sourceTree = "<group>"; };
+		2464218B25065878000B6ACE /* DrinkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkData.swift; sourceTree = "<group>"; };
+		2464218E25066D77000B6ACE /* RegisterDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDrinkViewController.swift; sourceTree = "<group>"; };
+		2464219025066D81000B6ACE /* RegisterDrinkViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterDrinkViewController.storyboard; sourceTree = "<group>"; };
+		2464219225077174000B6ACE /* PartyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetailsViewController.swift; sourceTree = "<group>"; };
+		24810B422507D3EC00E71233 /* DrinksInventoryTableVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksInventoryTableVIewController.swift; sourceTree = "<group>"; };
+		24AEEE2B2508C4AE00E5A69A /* InventoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewModel.swift; sourceTree = "<group>"; };
+		24AEEE2D2508C57C00E5A69A /* RegisterPartyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPartyViewModel.swift; sourceTree = "<group>"; };
+		24AEEE2F2508C5BC00E5A69A /* RegisterDrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDrinkViewModel.swift; sourceTree = "<group>"; };
+		24AEEE312508E8E500E5A69A /* DataManagementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagementViewModel.swift; sourceTree = "<group>"; };
+		24AEEE3325096DB000E5A69A /* PartyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetailsViewModel.swift; sourceTree = "<group>"; };
+		24DCDFBC24F929D900F3FFD2 /* UITableView+setEmptyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+setEmptyList.swift"; sourceTree = "<group>"; };
+		24DCDFBE24F92C0900F3FFD2 /* PartyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewModel.swift; sourceTree = "<group>"; };
+		24DCDFC124F92DFA00F3FFD2 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		24DCDFC424F92F7D00F3FFD2 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		24DCDFC724F9543800F3FFD2 /* RegisterPartyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterPartyViewController.storyboard; sourceTree = "<group>"; };
+		24DCDFC924F9547F00F3FFD2 /* RegisterPartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPartyViewController.swift; sourceTree = "<group>"; };
+		24DCDFCB24FBC1F300F3FFD2 /* UIViewController+instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+instantiate.swift"; sourceTree = "<group>"; };
+		24E0E36D24F8FD33009CA58F /* Fly Sound Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fly Sound Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E0E37024F8FD33009CA58F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24E0E37224F8FD33009CA58F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		24E0E37424F8FD33009CA58F /* PartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
+		24E0E37724F8FD33009CA58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24E0E37A24F8FD33009CA58F /* FlySound_Bar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlySound_Bar.xcdatamodel; sourceTree = "<group>"; };
+		24E0E37C24F8FD35009CA58F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24E0E37F24F8FD35009CA58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24E0E38124F8FD35009CA58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EF533B250A209500607786 /* String+attributed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+attributed.swift"; sourceTree = "<group>"; };
+		2F93FC3239C3A780FD66B2D5 /* Pods-FlySound Bar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlySound Bar.debug.xcconfig"; path = "Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar.debug.xcconfig"; sourceTree = "<group>"; };
+		7870ABB8DA73DA8337F96EFD /* Pods_FlySound_Bar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlySound_Bar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4C95DF3938EC32A1B8817F /* Pods-FlySound Bar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlySound Bar.release.xcconfig"; path = "Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24E0E36A24F8FD33009CA58F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C28BED0AB4CCF78EE8D8746 /* Pods_FlySound_Bar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2464216A25026056000B6ACE /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				2464216B25026077000B6ACE /* PartyDTO.swift */,
+				2464218325063EB2000B6ACE /* DrinkType.swift */,
+				2464218B25065878000B6ACE /* DrinkData.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		2464216D25028E70000B6ACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24642164250257D2000B6ACE /* RoundButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2464216F25028EA0000B6ACE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2464217025028EC7000B6ACE /* PartyCell.xib */,
+				2464217225028F83000B6ACE /* PartyCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2464217C25063C3A000B6ACE /* Drinks */ = {
+			isa = PBXGroup;
+			children = (
+				2464218D25066D69000B6ACE /* Register */,
+				24642185250642C9000B6ACE /* Cell */,
+				2464217D25063C65000B6ACE /* DrinksViewController.storyboard */,
+				2464217F25063E5F000B6ACE /* DrinksViewController.swift */,
+			);
+			path = Drinks;
+			sourceTree = "<group>";
+		};
+		24642185250642C9000B6ACE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2464218725064300000B6ACE /* DrinksCell.xib */,
+				2464218925064309000B6ACE /* DrinksCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		24642186250642D2000B6ACE /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				24DCDFC724F9543800F3FFD2 /* RegisterPartyViewController.storyboard */,
+				24DCDFC924F9547F00F3FFD2 /* RegisterPartyViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2464218D25066D69000B6ACE /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2464218E25066D77000B6ACE /* RegisterDrinkViewController.swift */,
+				2464219025066D81000B6ACE /* RegisterDrinkViewController.storyboard */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		24DCDFA924F914B900F3FFD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24E0E37624F8FD33009CA58F /* Main.storyboard */,
+				2464217C25063C3A000B6ACE /* Drinks */,
+				24DCDFC624F9541A00F3FFD2 /* Party */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24DCDFAB24F914E900F3FFD2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				24DCDFBE24F92C0900F3FFD2 /* PartyViewModel.swift */,
+				24AEEE2D2508C57C00E5A69A /* RegisterPartyViewModel.swift */,
+				2464218125063E83000B6ACE /* DrinksViewModel.swift */,
+				24AEEE2F2508C5BC00E5A69A /* RegisterDrinkViewModel.swift */,
+				24AEEE3325096DB000E5A69A /* PartyDetailsViewModel.swift */,
+				24AEEE2B2508C4AE00E5A69A /* InventoryViewModel.swift */,
+				24AEEE312508E8E500E5A69A /* DataManagementViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		24DCDFB024F9161300F3FFD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24E0E37024F8FD33009CA58F /* AppDelegate.swift */,
+				24E0E37224F8FD33009CA58F /* SceneDelegate.swift */,
+				24E0E37C24F8FD35009CA58F /* Assets.xcassets */,
+				24E0E37E24F8FD35009CA58F /* LaunchScreen.storyboard */,
+				24E0E38124F8FD35009CA58F /* Info.plist */,
+				24E0E37924F8FD33009CA58F /* FlySound_Bar.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24DCDFBB24F929AB00F3FFD2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2464217825029852000B6ACE /* UITableView+dequeueCell.swift */,
+				24DCDFBC24F929D900F3FFD2 /* UITableView+setEmptyList.swift */,
+				2464217625029835000B6ACE /* UIView+nib.swift */,
+				24642166250259A9000B6ACE /* UIViewController+hideKeyboard.swift */,
+				24DCDFCB24FBC1F300F3FFD2 /* UIViewController+instantiate.swift */,
+				2464216225025594000B6ACE /* UIViewController+present.swift */,
+				24EF533B250A209500607786 /* String+attributed.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		24DCDFC024F92D9300F3FFD2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				24DCDFC124F92DFA00F3FFD2 /* CoreDataStack.swift */,
+				2464217425029742000B6ACE /* Date+Formatter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		24DCDFC324F92F6D00F3FFD2 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				24DCDFC424F92F7D00F3FFD2 /* Log.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		24DCDFC624F9541A00F3FFD2 /* Party */ = {
+			isa = PBXGroup;
+			children = (
+				2464217A25063766000B6ACE /* PartyViewController.storyboard */,
+				24E0E37424F8FD33009CA58F /* PartyViewController.swift */,
+				2464219225077174000B6ACE /* PartyDetailsViewController.swift */,
+				24810B422507D3EC00E71233 /* DrinksInventoryTableVIewController.swift */,
+				2464216F25028EA0000B6ACE /* Cell */,
+				24642186250642D2000B6ACE /* Register */,
+			);
+			path = Party;
+			sourceTree = "<group>";
+		};
+		24E0E36424F8FD33009CA58F = {
+			isa = PBXGroup;
+			children = (
+				24E0E36F24F8FD33009CA58F /* FlySound Bar */,
+				24E0E36E24F8FD33009CA58F /* Products */,
+				4E4F46334057B00967500AB8 /* Pods */,
+				B65F62EECDA15A6565497F69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24E0E36E24F8FD33009CA58F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24E0E36D24F8FD33009CA58F /* Fly Sound Bar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24E0E36F24F8FD33009CA58F /* FlySound Bar */ = {
+			isa = PBXGroup;
+			children = (
+				24DCDFA924F914B900F3FFD2 /* Controller */,
+				2464216A25026056000B6ACE /* Data Model */,
+				24DCDFBB24F929AB00F3FFD2 /* Extensions */,
+				24DCDFC324F92F6D00F3FFD2 /* Logger */,
+				24DCDFB024F9161300F3FFD2 /* Resources */,
+				24DCDFC024F92D9300F3FFD2 /* Utils */,
+				2464216D25028E70000B6ACE /* View */,
+				24DCDFAB24F914E900F3FFD2 /* ViewModel */,
+			);
+			path = "FlySound Bar";
+			sourceTree = "<group>";
+		};
+		4E4F46334057B00967500AB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F93FC3239C3A780FD66B2D5 /* Pods-FlySound Bar.debug.xcconfig */,
+				DA4C95DF3938EC32A1B8817F /* Pods-FlySound Bar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B65F62EECDA15A6565497F69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7870ABB8DA73DA8337F96EFD /* Pods_FlySound_Bar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24E0E36C24F8FD33009CA58F /* FlySound Bar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E0E38424F8FD35009CA58F /* Build configuration list for PBXNativeTarget "FlySound Bar" */;
+			buildPhases = (
+				9316A85642D009108B53181A /* [CP] Check Pods Manifest.lock */,
+				24E0E36924F8FD33009CA58F /* Sources */,
+				24E0E36A24F8FD33009CA58F /* Frameworks */,
+				24E0E36B24F8FD33009CA58F /* Resources */,
+				AF74E3C9BA81F1B95C639448 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlySound Bar";
+			productName = "FlySound Bar";
+			productReference = 24E0E36D24F8FD33009CA58F /* Fly Sound Bar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24E0E36524F8FD33009CA58F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Nagy Edward Christian";
+				TargetAttributes = {
+					24E0E36C24F8FD33009CA58F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 24E0E36824F8FD33009CA58F /* Build configuration list for PBXProject "FlySound Bar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24E0E36424F8FD33009CA58F;
+			productRefGroup = 24E0E36E24F8FD33009CA58F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24E0E36C24F8FD33009CA58F /* FlySound Bar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24E0E36B24F8FD33009CA58F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2464219125066D81000B6ACE /* RegisterDrinkViewController.storyboard in Resources */,
+				24E0E38024F8FD35009CA58F /* LaunchScreen.storyboard in Resources */,
+				2464217E25063C65000B6ACE /* DrinksViewController.storyboard in Resources */,
+				2464218825064300000B6ACE /* DrinksCell.xib in Resources */,
+				24DCDFC824F9543800F3FFD2 /* RegisterPartyViewController.storyboard in Resources */,
+				2464217125028EC7000B6ACE /* PartyCell.xib in Resources */,
+				24E0E37D24F8FD35009CA58F /* Assets.xcassets in Resources */,
+				2464217B25063766000B6ACE /* PartyViewController.storyboard in Resources */,
+				24E0E37824F8FD33009CA58F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9316A85642D009108B53181A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlySound Bar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF74E3C9BA81F1B95C639448 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24E0E36924F8FD33009CA58F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2464218425063EB2000B6ACE /* DrinkType.swift in Sources */,
+				24810B432507D3EC00E71233 /* DrinksInventoryTableVIewController.swift in Sources */,
+				24642165250257D2000B6ACE /* RoundButton.swift in Sources */,
+				2464216C25026077000B6ACE /* PartyDTO.swift in Sources */,
+				2464218225063E83000B6ACE /* DrinksViewModel.swift in Sources */,
+				24AEEE302508C5BC00E5A69A /* RegisterDrinkViewModel.swift in Sources */,
+				24DCDFC224F92DFA00F3FFD2 /* CoreDataStack.swift in Sources */,
+				24DCDFBD24F929D900F3FFD2 /* UITableView+setEmptyList.swift in Sources */,
+				2464218F25066D77000B6ACE /* RegisterDrinkViewController.swift in Sources */,
+				24E0E37524F8FD33009CA58F /* PartyViewController.swift in Sources */,
+				2464217525029742000B6ACE /* Date+Formatter.swift in Sources */,
+				2464218A25064309000B6ACE /* DrinksCell.swift in Sources */,
+				24EF533C250A209500607786 /* String+attributed.swift in Sources */,
+				24DCDFCC24FBC1F300F3FFD2 /* UIViewController+instantiate.swift in Sources */,
+				24AEEE2E2508C57C00E5A69A /* RegisterPartyViewModel.swift in Sources */,
+				24AEEE3425096DB000E5A69A /* PartyDetailsViewModel.swift in Sources */,
+				2464218025063E5F000B6ACE /* DrinksViewController.swift in Sources */,
+				24642167250259A9000B6ACE /* UIViewController+hideKeyboard.swift in Sources */,
+				24E0E37B24F8FD33009CA58F /* FlySound_Bar.xcdatamodeld in Sources */,
+				24DCDFCA24F9547F00F3FFD2 /* RegisterPartyViewController.swift in Sources */,
+				24DCDFBF24F92C0900F3FFD2 /* PartyViewModel.swift in Sources */,
+				2464217925029852000B6ACE /* UITableView+dequeueCell.swift in Sources */,
+				2464217325028F83000B6ACE /* PartyCell.swift in Sources */,
+				24AEEE2C2508C4AE00E5A69A /* InventoryViewModel.swift in Sources */,
+				2464217725029835000B6ACE /* UIView+nib.swift in Sources */,
+				2464216325025594000B6ACE /* UIViewController+present.swift in Sources */,
+				2464218C25065878000B6ACE /* DrinkData.swift in Sources */,
+				24AEEE322508E8E500E5A69A /* DataManagementViewModel.swift in Sources */,
+				24E0E37124F8FD33009CA58F /* AppDelegate.swift in Sources */,
+				24DCDFC524F92F7D00F3FFD2 /* Log.swift in Sources */,
+				2464219325077174000B6ACE /* PartyDetailsViewController.swift in Sources */,
+				24E0E37324F8FD33009CA58F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24E0E37624F8FD33009CA58F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24E0E37724F8FD33009CA58F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24E0E37E24F8FD35009CA58F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24E0E37F24F8FD35009CA58F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24E0E38224F8FD35009CA58F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24E0E38324F8FD35009CA58F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24E0E38524F8FD35009CA58F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F93FC3239C3A780FD66B2D5 /* Pods-FlySound Bar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QA7C3BG73H;
+				INFOPLIST_FILE = "FlySound Bar/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iquestgroup.FlySoundBar;
+				PRODUCT_NAME = "Fly Sound Bar";
+				PROVISIONING_PROFILE_SPECIFIER = "FlySoundBar Development Provisioning Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24E0E38624F8FD35009CA58F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA4C95DF3938EC32A1B8817F /* Pods-FlySound Bar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QA7C3BG73H;
+				INFOPLIST_FILE = "FlySound Bar/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iquestgroup.FlySoundBar;
+				PRODUCT_NAME = "Fly Sound Bar";
+				PROVISIONING_PROFILE_SPECIFIER = "FlySoundBar Development Provisioning Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24E0E36824F8FD33009CA58F /* Build configuration list for PBXProject "FlySound Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E0E38224F8FD35009CA58F /* Debug */,
+				24E0E38324F8FD35009CA58F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24E0E38424F8FD35009CA58F /* Build configuration list for PBXNativeTarget "FlySound Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E0E38524F8FD35009CA58F /* Debug */,
+				24E0E38624F8FD35009CA58F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24E0E37924F8FD33009CA58F /* FlySound_Bar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24E0E37A24F8FD33009CA58F /* FlySound_Bar.xcdatamodel */,
+			);
+			currentVersion = 24E0E37A24F8FD33009CA58F /* FlySound_Bar.xcdatamodel */;
+			path = FlySound_Bar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 24E0E36524F8FD33009CA58F /* Project object */;
+}
