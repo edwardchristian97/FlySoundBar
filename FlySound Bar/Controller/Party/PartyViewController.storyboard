@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qse-fa-Ugu">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qse-fa-Ugu">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Parties-->
         <scene sceneID="Fg1-KQ-Yb7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8PG-5N-zuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="hJa-Lu-C7b" customClass="PartyViewController" customModule="Fly_Sound_Bar" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nsU-Df-IpP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IeC-Fx-UqI">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="591"/>
                                 <connections>
                                     <outlet property="dataSource" destination="hJa-Lu-C7b" id="6QS-ss-9Gm"/>
                                     <outlet property="delegate" destination="hJa-Lu-C7b" id="teh-yY-b5p"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="EPh-Yj-qTC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IeC-Fx-UqI" firstAttribute="leading" secondItem="EPh-Yj-qTC" secondAttribute="leading" id="OIp-vm-OiK"/>
                             <constraint firstItem="EPh-Yj-qTC" firstAttribute="trailing" secondItem="IeC-Fx-UqI" secondAttribute="trailing" id="ZAM-oH-Xbf"/>
                             <constraint firstItem="EPh-Yj-qTC" firstAttribute="bottom" secondItem="IeC-Fx-UqI" secondAttribute="bottom" id="c5t-KY-0OT"/>
                             <constraint firstItem="IeC-Fx-UqI" firstAttribute="top" secondItem="EPh-Yj-qTC" secondAttribute="top" id="xo5-Sb-neK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="EPh-Yj-qTC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Parties" id="D6n-6J-Cxo">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gXH-gE-7sB">
@@ -44,16 +45,98 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="IeC-Fx-UqI" id="rLs-8v-SvF"/>
-                        <segue destination="8tF-8K-sYC" kind="show" identifier="PartyTappedSegue" id="CSx-me-LFq"/>
+                        <segue destination="8tF-8K-sYC" kind="show" identifier="PartyDetailsSegue" id="eeV-ic-43O"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PG-5N-zuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="597.10144927536237" y="-198.21428571428569"/>
+        </scene>
+        <!--Drinks Inventory View Controller-->
+        <scene sceneID="2G7-gr-qTL">
+            <objects>
+                <viewController id="3Hi-FO-rcV" customClass="DrinksInventoryViewController" customModule="Fly_Sound_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cag-76-IvE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G9k-SH-o0N">
+                                <rect key="frame" x="0.0" y="44" width="414" height="529"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3Hi-FO-rcV" id="PO6-s6-0RE"/>
+                                    <outlet property="delegate" destination="3Hi-FO-rcV" id="Ivj-ud-aFc"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESs-QN-b3c">
+                                <rect key="frame" x="0.0" y="581" width="414" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9W-xQ-ZT6" customClass="RoundButton" customModule="Fly_Sound_Bar" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="24" width="334" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3fb-3p-1WV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Achita Comanda">
+                                            <color key="titleColor" name="FlySoundGreen"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="payButtonTapped:" destination="3Hi-FO-rcV" eventType="touchUpInside" id="sjh-QW-kwT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070589207109999996" green="0.074579976500000006" blue="0.070587836210000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="V9W-xQ-ZT6" secondAttribute="bottom" constant="32" id="7Pg-2C-4ae"/>
+                                    <constraint firstAttribute="height" constant="106" id="Mzx-YK-MKr"/>
+                                    <constraint firstItem="V9W-xQ-ZT6" firstAttribute="leading" secondItem="ESs-QN-b3c" secondAttribute="leading" constant="40" id="UDh-Ye-dme"/>
+                                    <constraint firstAttribute="trailing" secondItem="V9W-xQ-ZT6" secondAttribute="trailing" constant="40" id="bsZ-00-wSu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NX9-Xo-KKo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NX9-Xo-KKo" firstAttribute="bottom" secondItem="ESs-QN-b3c" secondAttribute="bottom" id="Q4M-RW-oOr"/>
+                            <constraint firstItem="NX9-Xo-KKo" firstAttribute="trailing" secondItem="G9k-SH-o0N" secondAttribute="trailing" id="Ufu-0l-dqy"/>
+                            <constraint firstItem="G9k-SH-o0N" firstAttribute="top" secondItem="NX9-Xo-KKo" secondAttribute="top" id="XZZ-6E-XoO"/>
+                            <constraint firstItem="NX9-Xo-KKo" firstAttribute="trailing" secondItem="ESs-QN-b3c" secondAttribute="trailing" id="Ygh-N1-TB5"/>
+                            <constraint firstItem="ESs-QN-b3c" firstAttribute="top" secondItem="G9k-SH-o0N" secondAttribute="bottom" constant="8" id="ciS-jc-h1C"/>
+                            <constraint firstItem="G9k-SH-o0N" firstAttribute="leading" secondItem="NX9-Xo-KKo" secondAttribute="leading" id="pJV-mq-Byb"/>
+                            <constraint firstItem="ESs-QN-b3c" firstAttribute="leading" secondItem="NX9-Xo-KKo" secondAttribute="leading" id="y73-QN-kbu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YMl-eh-gBX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="fz5-bh-Z4M">
+                            <connections>
+                                <action selector="resetButtonTapped:" destination="3Hi-FO-rcV" id="OiZ-Iy-tQi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cartView" destination="ESs-QN-b3c" id="rD0-Z2-LvL"/>
+                        <outlet property="cartViewBottomConstraint" destination="Q4M-RW-oOr" id="IcR-Ot-G6Q"/>
+                        <outlet property="payButton" destination="V9W-xQ-ZT6" id="9yL-rA-gr8"/>
+                        <outlet property="tableView" destination="G9k-SH-o0N" id="Lgk-yu-Fhg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vif-6q-MJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="333"/>
         </scene>
         <!--Parties-->
         <scene sceneID="ymr-bU-K27">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PHC-Sf-hUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qse-fa-Ugu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Parties" image="partyIcon" id="tM3-AV-cwq">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,7 +144,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="gmp-OT-hsR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -69,6 +152,7 @@
                         <segue destination="hJa-Lu-C7b" kind="relationship" relationship="rootViewController" id="CyR-Pc-c8H"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHC-Sf-hUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-313.04347826086956" y="-198.21428571428569"/>
         </scene>
@@ -77,37 +161,99 @@
             <objects>
                 <viewController id="8tF-8K-sYC" customClass="PartyDetailsViewController" customModule="Fly_Sound_Bar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uZj-3Y-unl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raT-bN-TBC">
-                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9X-Sw-Csc" customClass="RoundButton" customModule="Fly_Sound_Bar" customModuleProvider="target">
+                                <rect key="frame" x="50" y="621" width="314" height="50"/>
+                                <color key="backgroundColor" red="0.070589207109999996" green="0.074579976500000006" blue="0.070587836210000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ozE-mT-pga"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <state key="normal" title="Adauga Comanda">
+                                    <color key="titleColor" name="FlySoundGreen"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="newInventoryTapped:" destination="8tF-8K-sYC" eventType="touchUpInside" id="SeX-iN-eYc"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="uOP-fn-rNX">
+                                <rect key="frame" x="0.0" y="117" width="414" height="480"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8tF-8K-sYC" id="v4b-7z-gAR"/>
+                                    <outlet property="delegate" destination="8tF-8K-sYC" id="dSd-hd-9Mv"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mh-nQ-mjf">
+                                <rect key="frame" x="32" y="76" width="61" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000 RON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUM-M1-7fU">
+                                <rect key="frame" x="101" y="80" width="119" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ilC-OE-W7j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="FlySoundGreen"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="raT-bN-TBC" firstAttribute="centerX" secondItem="uZj-3Y-unl" secondAttribute="centerX" id="aJl-jZ-a03"/>
-                            <constraint firstItem="raT-bN-TBC" firstAttribute="centerY" secondItem="uZj-3Y-unl" secondAttribute="centerY" id="cuE-TR-mUX"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ON4-3V-ZOa"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8mh-nQ-mjf" firstAttribute="top" secondItem="ON4-3V-ZOa" secondAttribute="top" constant="32" id="3Pe-lk-Itb"/>
+                            <constraint firstItem="ON4-3V-ZOa" firstAttribute="trailing" secondItem="uOP-fn-rNX" secondAttribute="trailing" id="6eb-1f-F3I"/>
+                            <constraint firstItem="8mh-nQ-mjf" firstAttribute="leading" secondItem="ON4-3V-ZOa" secondAttribute="leading" constant="32" id="DxK-Ko-g46"/>
+                            <constraint firstItem="kUM-M1-7fU" firstAttribute="leading" secondItem="8mh-nQ-mjf" secondAttribute="trailing" constant="8" id="I7R-pj-Jcp"/>
+                            <constraint firstItem="ON4-3V-ZOa" firstAttribute="bottom" secondItem="y9X-Sw-Csc" secondAttribute="bottom" constant="16" id="KaW-Ob-vYz"/>
+                            <constraint firstItem="y9X-Sw-Csc" firstAttribute="top" secondItem="uOP-fn-rNX" secondAttribute="bottom" constant="24" id="Phw-tp-elv"/>
+                            <constraint firstItem="uOP-fn-rNX" firstAttribute="leading" secondItem="ON4-3V-ZOa" secondAttribute="leading" id="Qka-6f-npl"/>
+                            <constraint firstItem="ON4-3V-ZOa" firstAttribute="trailing" secondItem="y9X-Sw-Csc" secondAttribute="trailing" constant="50" id="Sub-Af-mcc"/>
+                            <constraint firstItem="uOP-fn-rNX" firstAttribute="top" secondItem="kUM-M1-7fU" secondAttribute="bottom" constant="16" id="eq1-NJ-AfS"/>
+                            <constraint firstItem="y9X-Sw-Csc" firstAttribute="leading" secondItem="ON4-3V-ZOa" secondAttribute="leading" constant="50" id="iQK-RY-4Ce"/>
+                            <constraint firstItem="kUM-M1-7fU" firstAttribute="centerY" secondItem="8mh-nQ-mjf" secondAttribute="centerY" id="yO4-cR-bFE"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fc9-Xt-XgO"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="fc9-Xt-XgO"/>
                     <connections>
-                        <outlet property="testLabel" destination="raT-bN-TBC" id="4oP-d7-g4u"/>
+                        <outlet property="tableView" destination="uOP-fn-rNX" id="k3u-21-4Ue"/>
+                        <outlet property="totalLabel" destination="kUM-M1-7fU" id="I3c-kg-yjo"/>
+                        <segue destination="3Hi-FO-rcV" kind="show" identifier="DrinksInventorySegue" id="pSd-uS-TA2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0z-ae-cbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="-198"/>
+            <point key="canvasLocation" x="1473.913043478261" y="-628.53260869565224"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="V9W-xQ-ZT6">
+            <size key="intrinsicContentSize" width="126" height="33"/>
+        </designable>
+        <designable name="y9X-Sw-Csc">
+            <size key="intrinsicContentSize" width="136" height="33"/>
+        </designable>
+    </designables>
+    <color key="tintColor" name="FlySoundGreen"/>
     <resources>
         <image name="partyIcon" width="24" height="24"/>
         <namedColor name="FlySoundGreen">
             <color red="0.056000001728534698" green="0.5" blue="0.335999995470047" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

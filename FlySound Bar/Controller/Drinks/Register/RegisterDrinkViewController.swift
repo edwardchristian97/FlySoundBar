@@ -11,7 +11,7 @@ final class RegisterDrinkViewController: UIViewController {
     @IBOutlet private weak var drinkCategoryPicker: UIPickerView!
     @IBOutlet private weak var picker: UIPickerView!
 
-    private let viewModel = DrinksViewModel()
+    private let viewModel = RegisterDrinkViewModel()
     private var selectedOption = ""
     var onClose: (() -> Void)?
 

@@ -30,6 +30,18 @@ class PartyViewController: UIViewController {
         super.viewDidLayoutSubviews()
         tableView.separatorStyle = .none
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let party = sender as? Party {
+            if let controller = segue.destination as? PartyDetailsViewController {
+                controller.party = party
+                controller.onTotalChanged = { total in
+                    self.viewModel.updateTotal(total, forParty: party)
+                    self.tableView.reloadData()
+                }
+            }
+        }
+    }
 }
 
 // MARK: UI Setup
@@ -64,14 +76,6 @@ extension PartyViewController {
             tableView.setEmptyList(withMessage: "Nu exista niciun party inregistrat.\nApasa pe + pentru a adauga un party.")
         } else {
             tableView.resetList()
-        }
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let title = sender as? String {
-            if let controller = segue.destination as? PartyDetailsViewController {
-                controller.test = title
-            }
         }
     }
 }
@@ -119,6 +123,6 @@ extension PartyViewController: UITableViewDataSource {
 extension PartyViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "PartyTappedSegue", sender: viewModel.partyAt(index: indexPath.row).name)
+        performSegue(withIdentifier: "PartyDetailsSegue", sender: viewModel.partyAt(index: indexPath.row))
     }
 }

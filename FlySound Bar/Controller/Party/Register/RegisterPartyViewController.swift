@@ -10,7 +10,7 @@ final class RegisterPartyViewController: UIViewController {
     @IBOutlet private weak var textField: UITextField!
     @IBOutlet private weak var datePicker: UIDatePicker!
 
-    private let viewModel = PartyViewModel()
+    private let viewModel = RegisterPartyViewModel()
     var onClose: (() -> Void)?
 
     override func viewDidLoad() {

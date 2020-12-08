@@ -7,26 +7,31 @@ import UIKit
 
 final class DrinksCell: UITableViewCell {
 
+    @IBOutlet private weak var cellView: UIView!
     @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var quantityLabel: UILabel!
 
     private var count = 0
+    var onPlusTapped: (() -> Void)?
+    var onMinusTapped: (() -> Void)?
 
-    func setup(drink: Drink) {
-        nameLabel.text = drink.name
-        priceLabel.text = "\(count)"
+    func setup(drinkName: String, quantity: Int) {
+        cellView.layer.cornerRadius = 10
+        nameLabel.text = drinkName
+        quantityLabel.text = "\(quantity)"
+    }
+
+    func setColorForQuantity(_ quantity: Int) {
+        let color = quantity > 0 ? UIColor(named: "FlySoundGreen") : .white
+        nameLabel.textColor = color
+        quantityLabel.textColor = color
     }
 
     @IBAction func plusButtonTapped() {
-        count = count + 1
-        priceLabel.text = "\(count)"
+        onPlusTapped?()
     }
 
     @IBAction func minusButtonTapped() {
-        count = count - 1
-        if count < 0 {
-            count = 0
-        }
-        priceLabel.text = "\(count)"
+        onMinusTapped?()
     }
 }

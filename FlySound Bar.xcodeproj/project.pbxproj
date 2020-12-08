@@ -27,6 +27,12 @@
 		2464218F25066D77000B6ACE /* RegisterDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464218E25066D77000B6ACE /* RegisterDrinkViewController.swift */; };
 		2464219125066D81000B6ACE /* RegisterDrinkViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2464219025066D81000B6ACE /* RegisterDrinkViewController.storyboard */; };
 		2464219325077174000B6ACE /* PartyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464219225077174000B6ACE /* PartyDetailsViewController.swift */; };
+		24810B432507D3EC00E71233 /* DrinksInventoryTableVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24810B422507D3EC00E71233 /* DrinksInventoryTableVIewController.swift */; };
+		24AEEE2C2508C4AE00E5A69A /* InventoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE2B2508C4AE00E5A69A /* InventoryViewModel.swift */; };
+		24AEEE2E2508C57C00E5A69A /* RegisterPartyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE2D2508C57C00E5A69A /* RegisterPartyViewModel.swift */; };
+		24AEEE302508C5BC00E5A69A /* RegisterDrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE2F2508C5BC00E5A69A /* RegisterDrinkViewModel.swift */; };
+		24AEEE322508E8E500E5A69A /* DataManagementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE312508E8E500E5A69A /* DataManagementViewModel.swift */; };
+		24AEEE3425096DB000E5A69A /* PartyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEEE3325096DB000E5A69A /* PartyDetailsViewModel.swift */; };
 		24DCDFBD24F929D900F3FFD2 /* UITableView+setEmptyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDFBC24F929D900F3FFD2 /* UITableView+setEmptyList.swift */; };
 		24DCDFBF24F92C0900F3FFD2 /* PartyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDFBE24F92C0900F3FFD2 /* PartyViewModel.swift */; };
 		24DCDFC224F92DFA00F3FFD2 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDFC124F92DFA00F3FFD2 /* CoreDataStack.swift */; };
@@ -41,6 +47,7 @@
 		24E0E37B24F8FD33009CA58F /* FlySound_Bar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24E0E37924F8FD33009CA58F /* FlySound_Bar.xcdatamodeld */; };
 		24E0E37D24F8FD35009CA58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E0E37C24F8FD35009CA58F /* Assets.xcassets */; };
 		24E0E38024F8FD35009CA58F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0E37E24F8FD35009CA58F /* LaunchScreen.storyboard */; };
+		24EF533C250A209500607786 /* String+attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF533B250A209500607786 /* String+attributed.swift */; };
 		3C28BED0AB4CCF78EE8D8746 /* Pods_FlySound_Bar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7870ABB8DA73DA8337F96EFD /* Pods_FlySound_Bar.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +72,12 @@
 		2464218E25066D77000B6ACE /* RegisterDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDrinkViewController.swift; sourceTree = "<group>"; };
 		2464219025066D81000B6ACE /* RegisterDrinkViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterDrinkViewController.storyboard; sourceTree = "<group>"; };
 		2464219225077174000B6ACE /* PartyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetailsViewController.swift; sourceTree = "<group>"; };
+		24810B422507D3EC00E71233 /* DrinksInventoryTableVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksInventoryTableVIewController.swift; sourceTree = "<group>"; };
+		24AEEE2B2508C4AE00E5A69A /* InventoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewModel.swift; sourceTree = "<group>"; };
+		24AEEE2D2508C57C00E5A69A /* RegisterPartyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPartyViewModel.swift; sourceTree = "<group>"; };
+		24AEEE2F2508C5BC00E5A69A /* RegisterDrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDrinkViewModel.swift; sourceTree = "<group>"; };
+		24AEEE312508E8E500E5A69A /* DataManagementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagementViewModel.swift; sourceTree = "<group>"; };
+		24AEEE3325096DB000E5A69A /* PartyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetailsViewModel.swift; sourceTree = "<group>"; };
 		24DCDFBC24F929D900F3FFD2 /* UITableView+setEmptyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+setEmptyList.swift"; sourceTree = "<group>"; };
 		24DCDFBE24F92C0900F3FFD2 /* PartyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewModel.swift; sourceTree = "<group>"; };
 		24DCDFC124F92DFA00F3FFD2 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -81,6 +94,7 @@
 		24E0E37C24F8FD35009CA58F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24E0E37F24F8FD35009CA58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24E0E38124F8FD35009CA58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EF533B250A209500607786 /* String+attributed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+attributed.swift"; sourceTree = "<group>"; };
 		2F93FC3239C3A780FD66B2D5 /* Pods-FlySound Bar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlySound Bar.debug.xcconfig"; path = "Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar.debug.xcconfig"; sourceTree = "<group>"; };
 		7870ABB8DA73DA8337F96EFD /* Pods_FlySound_Bar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlySound_Bar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4C95DF3938EC32A1B8817F /* Pods-FlySound Bar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlySound Bar.release.xcconfig"; path = "Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,7 +191,12 @@
 			isa = PBXGroup;
 			children = (
 				24DCDFBE24F92C0900F3FFD2 /* PartyViewModel.swift */,
+				24AEEE2D2508C57C00E5A69A /* RegisterPartyViewModel.swift */,
 				2464218125063E83000B6ACE /* DrinksViewModel.swift */,
+				24AEEE2F2508C5BC00E5A69A /* RegisterDrinkViewModel.swift */,
+				24AEEE3325096DB000E5A69A /* PartyDetailsViewModel.swift */,
+				24AEEE2B2508C4AE00E5A69A /* InventoryViewModel.swift */,
+				24AEEE312508E8E500E5A69A /* DataManagementViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -204,6 +223,7 @@
 				24642166250259A9000B6ACE /* UIViewController+hideKeyboard.swift */,
 				24DCDFCB24FBC1F300F3FFD2 /* UIViewController+instantiate.swift */,
 				2464216225025594000B6ACE /* UIViewController+present.swift */,
+				24EF533B250A209500607786 /* String+attributed.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -231,6 +251,7 @@
 				2464217A25063766000B6ACE /* PartyViewController.storyboard */,
 				24E0E37424F8FD33009CA58F /* PartyViewController.swift */,
 				2464219225077174000B6ACE /* PartyDetailsViewController.swift */,
+				24810B422507D3EC00E71233 /* DrinksInventoryTableVIewController.swift */,
 				2464216F25028EA0000B6ACE /* Cell */,
 				24642186250642D2000B6ACE /* Register */,
 			);
@@ -409,16 +430,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2464218425063EB2000B6ACE /* DrinkType.swift in Sources */,
+				24810B432507D3EC00E71233 /* DrinksInventoryTableVIewController.swift in Sources */,
 				24642165250257D2000B6ACE /* RoundButton.swift in Sources */,
 				2464216C25026077000B6ACE /* PartyDTO.swift in Sources */,
 				2464218225063E83000B6ACE /* DrinksViewModel.swift in Sources */,
+				24AEEE302508C5BC00E5A69A /* RegisterDrinkViewModel.swift in Sources */,
 				24DCDFC224F92DFA00F3FFD2 /* CoreDataStack.swift in Sources */,
 				24DCDFBD24F929D900F3FFD2 /* UITableView+setEmptyList.swift in Sources */,
 				2464218F25066D77000B6ACE /* RegisterDrinkViewController.swift in Sources */,
 				24E0E37524F8FD33009CA58F /* PartyViewController.swift in Sources */,
 				2464217525029742000B6ACE /* Date+Formatter.swift in Sources */,
 				2464218A25064309000B6ACE /* DrinksCell.swift in Sources */,
+				24EF533C250A209500607786 /* String+attributed.swift in Sources */,
 				24DCDFCC24FBC1F300F3FFD2 /* UIViewController+instantiate.swift in Sources */,
+				24AEEE2E2508C57C00E5A69A /* RegisterPartyViewModel.swift in Sources */,
+				24AEEE3425096DB000E5A69A /* PartyDetailsViewModel.swift in Sources */,
 				2464218025063E5F000B6ACE /* DrinksViewController.swift in Sources */,
 				24642167250259A9000B6ACE /* UIViewController+hideKeyboard.swift in Sources */,
 				24E0E37B24F8FD33009CA58F /* FlySound_Bar.xcdatamodeld in Sources */,
@@ -426,9 +452,11 @@
 				24DCDFBF24F92C0900F3FFD2 /* PartyViewModel.swift in Sources */,
 				2464217925029852000B6ACE /* UITableView+dequeueCell.swift in Sources */,
 				2464217325028F83000B6ACE /* PartyCell.swift in Sources */,
+				24AEEE2C2508C4AE00E5A69A /* InventoryViewModel.swift in Sources */,
 				2464217725029835000B6ACE /* UIView+nib.swift in Sources */,
 				2464216325025594000B6ACE /* UIViewController+present.swift in Sources */,
 				2464218C25065878000B6ACE /* DrinkData.swift in Sources */,
+				24AEEE322508E8E500E5A69A /* DataManagementViewModel.swift in Sources */,
 				24E0E37124F8FD33009CA58F /* AppDelegate.swift in Sources */,
 				24DCDFC524F92F7D00F3FFD2 /* Log.swift in Sources */,
 				2464219325077174000B6ACE /* PartyDetailsViewController.swift in Sources */,
@@ -577,16 +605,18 @@
 			baseConfigurationReference = 2F93FC3239C3A780FD66B2D5 /* Pods-FlySound Bar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZG383X98YS;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QA7C3BG73H;
 				INFOPLIST_FILE = "FlySound Bar/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.edward-christian.FlySound-Bar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iquestgroup.FlySoundBar;
 				PRODUCT_NAME = "Fly Sound Bar";
+				PROVISIONING_PROFILE_SPECIFIER = "FlySoundBar Development Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -597,16 +627,18 @@
 			baseConfigurationReference = DA4C95DF3938EC32A1B8817F /* Pods-FlySound Bar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZG383X98YS;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QA7C3BG73H;
 				INFOPLIST_FILE = "FlySound Bar/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.edward-christian.FlySound-Bar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iquestgroup.FlySoundBar;
 				PRODUCT_NAME = "Fly Sound Bar";
+				PROVISIONING_PROFILE_SPECIFIER = "FlySoundBar Development Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

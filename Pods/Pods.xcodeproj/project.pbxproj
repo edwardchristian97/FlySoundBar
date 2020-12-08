@@ -7,103 +7,182 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03BF07F2F8A6ED79D3FE8E00AF9DC066 /* FilterValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5EE7B5917E38898A08A246242BEC65 /* FilterValidator.swift */; };
-		08FB87102540C9917F2B9818EC294B8A /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E441ED89DA44D631CF8A247A4C563BAD /* BaseDestination.swift */; };
-		0CFFBD55760461439DCD2E287895CF0C /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3DD6639468F1B2E223B0D3D49B284 /* Animations.swift */; };
-		12C307CFA4BF58355D82DC2FEF3B7FEF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6F794B326E122BB04F0C9E6EB5130 /* Extensions.swift */; };
-		2D796693C82C88B236B517CC3BF3DD81 /* RevealingSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD40D46FCFFCD7D3AA81ED8E80877F9F /* RevealingSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		334B4420C1D35AB5E97786B7EC59AF53 /* SplashAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE37F0CC33EFECDC7E69F30C19EA1D /* SplashAnimatable.swift */; };
-		345301588CE2D5818996472BA109A6B2 /* RevealingSplashView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0D71E672247E8AA5689DF0767BF /* RevealingSplashView-dummy.m */; };
-		3484A92910297D992FF759BA17C1F049 /* Pods-FlySound Bar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FD2F7EB8E9B3E530CEC59DCC4A3976 /* Pods-FlySound Bar-dummy.m */; };
-		3A332F19811B66B1BB332E6DA74378F9 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977845D9F3456CD286F0D7BA5C27DED /* ConsoleDestination.swift */; };
-		4E906E944DCB7DE85716688CE72D677C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5D0F690D40F6666BF3E861DAD7F01ED6 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837455AFFAA0065DE8D96FB44D50C42 /* Filter.swift */; };
-		60181ACAAEB45738C31824C8A2B217E0 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4B332FEEEC1CDE2580E26E18CC551 /* SwiftyBeaver.swift */; };
-		60982165A0AEF5C970AAA1D36DADB08E /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8091C62146BDC44DA5609BB5B359BA9E /* FileDestination.swift */; };
-		72C4C982D8AA98C0A5BEAA245CE89F6B /* Pods-FlySound Bar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F7342F31A111D208328A6A10E31015 /* Pods-FlySound Bar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03BF07F2F8A6ED79D3FE8E00AF9DC066 /* FilterValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51723D4078023DD810F7754B87E5A8DE /* FilterValidator.swift */; };
+		08FB87102540C9917F2B9818EC294B8A /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B08D9DCA4458847F22D967B76CC3 /* BaseDestination.swift */; };
+		0B08DFF991597B12F4B73F5E699BC130 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD99B2627B254C7871563F41815B1268 /* Window.swift */; };
+		0CFFBD55760461439DCD2E287895CF0C /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B57D7D7FD79ED10E7F64CB3C5DC2E7 /* Animations.swift */; };
+		0D0FC5FCA5DC6851AA0674A0F436F75C /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AED031437B8BE9BECA3A012DAF4AB86 /* HUD.swift */; };
+		12C307CFA4BF58355D82DC2FEF3B7FEF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC05988F92DBAA3578812DEF6E72B28 /* Extensions.swift */; };
+		14035A7A6B8A825357C702BBE6C8848C /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D6268C58CFEDF5FAB802978FA413DC /* WindowRootViewController.swift */; };
+		148F4A8D0E9317AF7E814A558AC16AA7 /* PKHUDWideBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7891F34236A7B6667B9FAB6DD645B4B8 /* PKHUDWideBaseView.swift */; };
+		180A266E2AF087B3E947058335E89CE0 /* PKHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170E9B311563ED336F2B2B74D4E79F9 /* PKHUD.swift */; };
+		1F824E58DBB325F219AFB0C9451BE1C8 /* PKHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456334BC48576F8DF302B6A8BF18DBC /* PKHUDAssets.swift */; };
+		26F26A9A4B2F065FE7D378DE82112104 /* Pods-FlySound Bar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FD2F7EB8E9B3E530CEC59DCC4A3976 /* Pods-FlySound Bar-dummy.m */; };
+		2D796693C82C88B236B517CC3BF3DD81 /* RevealingSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44EF1A52652DC5D44C7D4AECC03E9750 /* RevealingSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F445BC870DC65B5DB15B8F51AE9E77 /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E744303EA442D9BD33301007662CF18 /* PKHUDRotatingImageView.swift */; };
+		334B4420C1D35AB5E97786B7EC59AF53 /* SplashAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6875773425046F940BA143361F4A430 /* SplashAnimatable.swift */; };
+		345301588CE2D5818996472BA109A6B2 /* RevealingSplashView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984210B4A1D62B1BDC112D1B14BD0DE /* RevealingSplashView-dummy.m */; };
+		39A93C2CC130C7BBC883E0735F630671 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B10A629D07A80802016DCEE67A2C1E /* PKHUDSuccessView.swift */; };
+		3A332F19811B66B1BB332E6DA74378F9 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A69A2EBF28F54484859DB326556913 /* ConsoleDestination.swift */; };
+		446493C8F226FA8CC9D4D706486FA605 /* PKHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 13AF43BCCA22369AD1CE1713547B0BC7 /* PKHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E7808DA4C495BFCA04EC8FA99EF06C /* PKHUDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3D7B283A11864E92718AD6959D795 /* PKHUDProgressView.swift */; };
+		5D0F690D40F6666BF3E861DAD7F01ED6 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7DEC29D123535EA4B1D409859CBBB0 /* Filter.swift */; };
+		60181ACAAEB45738C31824C8A2B217E0 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45244DFF6E1CBDB22293137D9480CB1 /* SwiftyBeaver.swift */; };
+		606FB101465BA0EC4F2ED1EDE8E152DD /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A079B331EAF94B2C4202604F97AE0E /* PKHUDAnimating.swift */; };
+		60982165A0AEF5C970AAA1D36DADB08E /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD515F4D97EFCFB743A87DE06F8B9BDD /* FileDestination.swift */; };
+		61829B94A26402F3C0BEAE7D075FF147 /* Pods-FlySound Bar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F7342F31A111D208328A6A10E31015 /* Pods-FlySound Bar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		675EC1A032DFDD820264B3AE47B297C2 /* PKHUDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EE98323D4401AF56E15340E7AAB15 /* PKHUDAnimation.swift */; };
+		736CDC46C989088EE1275153BE700A37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		770168DE52B4855A94437E5EB527EC84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		776C8675E6F20EE4F8C7D7344D670BB1 /* SplashAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB35AEC8845E65A723137E15425A086 /* SplashAnimationType.swift */; };
-		7B660FBBB1E5A8DFB0542D4CAF2FC877 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB89EE86EE956268BD92038F55FB36 /* Base64.swift */; };
-		941CF8600D86F37CEF165DA6E7F3134A /* RevealingSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5909D3793CECEAE38306C7C61A179A83 /* RevealingSplashView.swift */; };
-		A02237797E2C5888CE67F7F68B06F32B /* SwiftyBeaver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E9437C70409FBD62C6ECEF069290B5 /* SwiftyBeaver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1B6695BF715AE769FB45DF6AFC196AE /* SwiftyBeaver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D2B08018558C2811355D2A5269AD0B /* SwiftyBeaver-dummy.m */; };
-		BE65E4E713D0EAE19B3E490B200FEBD1 /* GoogleCloudDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FD007B5235AA0E52D0EA492E9B990 /* GoogleCloudDestination.swift */; };
-		C5883C150A7361A7E63DCBC743C71C1D /* SBPlatformDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529F4346B5494F1FBC4AFBE79FACA19 /* SBPlatformDestination.swift */; };
+		771FF27CF9018A865BE6AA1C8FDD0646 /* PKHUDResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */; };
+		776C8675E6F20EE4F8C7D7344D670BB1 /* SplashAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5410F252F1CC81DB580FB39BBB0077 /* SplashAnimationType.swift */; };
+		7B660FBBB1E5A8DFB0542D4CAF2FC877 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281586209B452EB51AB3D7F2C5ACF2A /* Base64.swift */; };
+		941CF8600D86F37CEF165DA6E7F3134A /* RevealingSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328C68E5A3E06893FA7F08367B4E482 /* RevealingSplashView.swift */; };
+		9432D6D1CE40B94ACC42309A46DA4C4B /* PKHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A2C81379DEEFE9FDFA7D04E8A7B37E /* PKHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C4229D5D1B5FC7606ECC49F776E64CD /* PKHUDSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72E40E07737A95C7276B669DE800FF /* PKHUDSquareBaseView.swift */; };
+		A02237797E2C5888CE67F7F68B06F32B /* SwiftyBeaver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAE7B57CE519C0F156E1AD772FBB448 /* SwiftyBeaver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1B6695BF715AE769FB45DF6AFC196AE /* SwiftyBeaver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 952E2E897A5B8CFE8DAE04AA2EFA267B /* SwiftyBeaver-dummy.m */; };
+		A8EA6E398B7FC737D0D92A533D7677E5 /* PKHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9E6A25937CA73A45A5F4945CD7BE0D /* PKHUD-dummy.m */; };
+		BE65E4E713D0EAE19B3E490B200FEBD1 /* GoogleCloudDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D436053106DFAA142FF37960373CD /* GoogleCloudDestination.swift */; };
+		C5883C150A7361A7E63DCBC743C71C1D /* SBPlatformDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32B8E41C8813FD5C3DB5E1F5803E6B /* SBPlatformDestination.swift */; };
 		CDF7A07ECE0954A48891A7E36AAECB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		DCEFD2A2B6DCBF97ED1C223D0D2310B2 /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91080D6A0EF50A92EBE11457878639 /* AES256CBC.swift */; };
-		F5314F2BB4EBA2C5AC7C3EFB485C16DD /* RevealingSplashView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F75EF668853DF41727C3E86796590DA /* RevealingSplashView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB20EB5F12F78130500E8683C2214E11 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DF6F4AC5847605F9BA15BDAED1C3E /* FrameView.swift */; };
+		DCEFD2A2B6DCBF97ED1C223D0D2310B2 /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9046AA897811F7CD317A322C3A9D99 /* AES256CBC.swift */; };
+		E2A38E421D16111E6DE45070BA0F0A7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3721EAA26CC596E8953ADAEE20AAFD74 /* Images.xcassets */; };
+		E84C1832305BF7AA61C2E6F99C7369C0 /* PKHUDSystemActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C95BE080C243BF56A8928032DC7678 /* PKHUDSystemActivityIndicatorView.swift */; };
+		EF50980DA05BC44D9725C5702FDDD669 /* PKHUDErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29849F6D9114C382709DEA37982282 /* PKHUDErrorView.swift */; };
+		F2CC01B79708C6CC4DEA8FD3B308C4F7 /* PKHUDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AE9E52C9D03A2A81D765A426EB3ED /* PKHUDTextView.swift */; };
+		F5314F2BB4EBA2C5AC7C3EFB485C16DD /* RevealingSplashView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD12BA67644A840EE4877DC5FB296ABB /* RevealingSplashView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F786D1942BEC12F8EE5AC6B9DA1A5520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		13CBE3568DDC6CDF84D35FAE8BC6D422 /* PBXContainerItemProxy */ = {
+		522FE972F324593CB8A68DF4CD0291E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1740FECD5A74A42ADAE96F3A8246787A;
-			remoteInfo = SwiftyBeaver;
+			remoteGlobalIDString = 364873017BA37260EF589D44B6B73D21;
+			remoteInfo = PKHUD;
 		};
-		43C64D28650B6C91A2698C95896EBFCD /* PBXContainerItemProxy */ = {
+		BB59DCE0F915B30D6735291A5445D876 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A16BB753FC705C22DAFCD8B7C1071A09;
 			remoteInfo = RevealingSplashView;
 		};
+		C7E4FF5E720A8106ADD14262653F5F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F7332F1050B42A501616421AC869EB;
+			remoteInfo = "PKHUD-PKHUDResources";
+		};
+		D94CB51CD39DD6709C57E758B1F1FC09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1740FECD5A74A42ADAE96F3A8246787A;
+			remoteInfo = SwiftyBeaver;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08DB89EE86EE956268BD92038F55FB36 /* Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64.swift; path = Sources/Base64.swift; sourceTree = "<group>"; };
+		01B57D7D7FD79ED10E7F64CB3C5DC2E7 /* Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animations.swift; path = RevealingSplashView/Animations.swift; sourceTree = "<group>"; };
+		04C3D7B283A11864E92718AD6959D795 /* PKHUDProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDProgressView.swift; path = PKHUD/PKHUDProgressView.swift; sourceTree = "<group>"; };
+		05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PKHUD.framework; path = PKHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E94E827777DDA6B17E4D49D62018BBD /* Pods-FlySound Bar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlySound Bar.modulemap"; sourceTree = "<group>"; };
-		0FB35AEC8845E65A723137E15425A086 /* SplashAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SplashAnimationType.swift; path = RevealingSplashView/SplashAnimationType.swift; sourceTree = "<group>"; };
-		1520FC87BDE864AA5D0A863BE213E54D /* SwiftyBeaver-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyBeaver-Info.plist"; sourceTree = "<group>"; };
+		0EC05988F92DBAA3578812DEF6E72B28 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		13AF43BCCA22369AD1CE1713547B0BC7 /* PKHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKHUD.h; path = PKHUD/PKHUD.h; sourceTree = "<group>"; };
+		14750A8B80779B70C671A4273A376724 /* SwiftyBeaver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyBeaver.modulemap; sourceTree = "<group>"; };
 		16F7342F31A111D208328A6A10E31015 /* Pods-FlySound Bar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlySound Bar-umbrella.h"; sourceTree = "<group>"; };
-		1C811F7EDEBF2AFBEA67B7EB82E9C75D /* RevealingSplashView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RevealingSplashView-prefix.pch"; sourceTree = "<group>"; };
-		1CAE37F0CC33EFECDC7E69F30C19EA1D /* SplashAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SplashAnimatable.swift; path = RevealingSplashView/SplashAnimatable.swift; sourceTree = "<group>"; };
-		205DE1EFC8AE305D03B9D750341655A9 /* RevealingSplashView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RevealingSplashView-Info.plist"; sourceTree = "<group>"; };
-		20B6F794B326E122BB04F0C9E6EB5130 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		1E2D436053106DFAA142FF37960373CD /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleCloudDestination.swift; path = Sources/GoogleCloudDestination.swift; sourceTree = "<group>"; };
+		1E744303EA442D9BD33301007662CF18 /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDRotatingImageView.swift; path = PKHUD/PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
 		2297B40C67C42464BA08B14A10B02F34 /* Pods-FlySound Bar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlySound Bar-Info.plist"; sourceTree = "<group>"; };
+		2A32B8E41C8813FD5C3DB5E1F5803E6B /* SBPlatformDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBPlatformDestination.swift; path = Sources/SBPlatformDestination.swift; sourceTree = "<group>"; };
+		2A7DEC29D123535EA4B1D409859CBBB0 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		2C80642F301C42407A2069DE04E4A1D4 /* RevealingSplashView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RevealingSplashView-Info.plist"; sourceTree = "<group>"; };
+		2E9046AA897811F7CD317A322C3A9D99 /* AES256CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES256CBC.swift; path = Sources/AES256CBC.swift; sourceTree = "<group>"; };
+		3189B08D9DCA4458847F22D967B76CC3 /* BaseDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDestination.swift; path = Sources/BaseDestination.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3529F4346B5494F1FBC4AFBE79FACA19 /* SBPlatformDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBPlatformDestination.swift; path = Sources/SBPlatformDestination.swift; sourceTree = "<group>"; };
-		3AD3DD6639468F1B2E223B0D3D49B284 /* Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animations.swift; path = RevealingSplashView/Animations.swift; sourceTree = "<group>"; };
+		3721EAA26CC596E8953ADAEE20AAFD74 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PKHUD/Images.xcassets; sourceTree = "<group>"; };
+		3984210B4A1D62B1BDC112D1B14BD0DE /* RevealingSplashView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RevealingSplashView-dummy.m"; sourceTree = "<group>"; };
+		3D5410F252F1CC81DB580FB39BBB0077 /* SplashAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SplashAnimationType.swift; path = RevealingSplashView/SplashAnimationType.swift; sourceTree = "<group>"; };
+		3F29849F6D9114C382709DEA37982282 /* PKHUDErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDErrorView.swift; path = PKHUD/PKHUDErrorView.swift; sourceTree = "<group>"; };
+		4170E9B311563ED336F2B2B74D4E79F9 /* PKHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUD.swift; path = PKHUD/PKHUD.swift; sourceTree = "<group>"; };
+		44EF1A52652DC5D44C7D4AECC03E9750 /* RevealingSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RevealingSplashView.h; path = RevealingSplashView/RevealingSplashView.h; sourceTree = "<group>"; };
+		483AE9E52C9D03A2A81D765A426EB3ED /* PKHUDTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDTextView.swift; path = PKHUD/PKHUDTextView.swift; sourceTree = "<group>"; };
+		4E2014F32DC991952D1B7F6857F38439 /* PKHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-prefix.pch"; sourceTree = "<group>"; };
+		51723D4078023DD810F7754B87E5A8DE /* FilterValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterValidator.swift; path = Sources/FilterValidator.swift; sourceTree = "<group>"; };
 		5597A64F6A7F54EA5F1F391CB606B1D4 /* Pods_FlySound_Bar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlySound_Bar.framework; path = "Pods-FlySound Bar.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5909D3793CECEAE38306C7C61A179A83 /* RevealingSplashView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RevealingSplashView.swift; path = RevealingSplashView/RevealingSplashView.swift; sourceTree = "<group>"; };
-		5C4E2F8D894AAFC5D8E2148F4A75346E /* RevealingSplashView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RevealingSplashView.modulemap; sourceTree = "<group>"; };
-		5C8FD007B5235AA0E52D0EA492E9B990 /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleCloudDestination.swift; path = Sources/GoogleCloudDestination.swift; sourceTree = "<group>"; };
-		5DAFD0D71E672247E8AA5689DF0767BF /* RevealingSplashView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RevealingSplashView-dummy.m"; sourceTree = "<group>"; };
-		5E91080D6A0EF50A92EBE11457878639 /* AES256CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES256CBC.swift; path = Sources/AES256CBC.swift; sourceTree = "<group>"; };
-		5F75EF668853DF41727C3E86796590DA /* RevealingSplashView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RevealingSplashView-umbrella.h"; sourceTree = "<group>"; };
-		70E9437C70409FBD62C6ECEF069290B5 /* SwiftyBeaver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-umbrella.h"; sourceTree = "<group>"; };
+		6456334BC48576F8DF302B6A8BF18DBC /* PKHUDAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAssets.swift; path = PKHUD/PKHUDAssets.swift; sourceTree = "<group>"; };
+		65A079B331EAF94B2C4202604F97AE0E /* PKHUDAnimating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimating.swift; path = PKHUD/PKHUDAnimating.swift; sourceTree = "<group>"; };
+		65A98CC3A38637B91D3CEE5E47084191 /* SwiftyBeaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBeaver.release.xcconfig; sourceTree = "<group>"; };
+		75B10A629D07A80802016DCEE67A2C1E /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSuccessView.swift; path = PKHUD/PKHUDSuccessView.swift; sourceTree = "<group>"; };
 		7638CA55E0A1D2B507425D2852A202A3 /* Pods-FlySound Bar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlySound Bar.release.xcconfig"; sourceTree = "<group>"; };
-		76FCF070C6DBA1B0E56675BF20901A67 /* RevealingSplashView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RevealingSplashView.debug.xcconfig; sourceTree = "<group>"; };
+		7891F34236A7B6667B9FAB6DD645B4B8 /* PKHUDWideBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDWideBaseView.swift; path = PKHUD/PKHUDWideBaseView.swift; sourceTree = "<group>"; };
+		78A2C81379DEEFE9FDFA7D04E8A7B37E /* PKHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-umbrella.h"; sourceTree = "<group>"; };
 		79FD2F7EB8E9B3E530CEC59DCC4A3976 /* Pods-FlySound Bar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlySound Bar-dummy.m"; sourceTree = "<group>"; };
 		7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyBeaver.framework; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8091C62146BDC44DA5609BB5B359BA9E /* FileDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileDestination.swift; path = Sources/FileDestination.swift; sourceTree = "<group>"; };
+		7C78B926D7228BA7FEBBFD3DB9EEAD06 /* SwiftyBeaver-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyBeaver-Info.plist"; sourceTree = "<group>"; };
+		83A69A2EBF28F54484859DB326556913 /* ConsoleDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleDestination.swift; path = Sources/ConsoleDestination.swift; sourceTree = "<group>"; };
 		8A19C06D9592B0B930D4BC509F327C1D /* Pods-FlySound Bar-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlySound Bar-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8BAB373E36D0FF06862334A4857BAD9A /* SwiftyBeaver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyBeaver.modulemap; sourceTree = "<group>"; };
-		8EB4B332FEEEC1CDE2580E26E18CC551 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyBeaver.swift; path = Sources/SwiftyBeaver.swift; sourceTree = "<group>"; };
+		8AED031437B8BE9BECA3A012DAF4AB86 /* HUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HUD.swift; path = PKHUD/HUD.swift; sourceTree = "<group>"; };
+		8FAE7B57CE519C0F156E1AD772FBB448 /* SwiftyBeaver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-umbrella.h"; sourceTree = "<group>"; };
+		952E2E897A5B8CFE8DAE04AA2EFA267B /* SwiftyBeaver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyBeaver-dummy.m"; sourceTree = "<group>"; };
+		9A5C1FF23A2CA7B28104E98BB796EBF3 /* RevealingSplashView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RevealingSplashView-prefix.pch"; sourceTree = "<group>"; };
+		9A8B4197C46385FDDC5905E138F5D643 /* PKHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.debug.xcconfig; sourceTree = "<group>"; };
+		9AC4F3FD02837107025181418593D8D7 /* PKHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PKHUD.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A977845D9F3456CD286F0D7BA5C27DED /* ConsoleDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleDestination.swift; path = Sources/ConsoleDestination.swift; sourceTree = "<group>"; };
-		AB5EE7B5917E38898A08A246242BEC65 /* FilterValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterValidator.swift; path = Sources/FilterValidator.swift; sourceTree = "<group>"; };
+		A9C95BE080C243BF56A8928032DC7678 /* PKHUDSystemActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSystemActivityIndicatorView.swift; path = PKHUD/PKHUDSystemActivityIndicatorView.swift; sourceTree = "<group>"; };
 		AC0646E9B243DE3D71A8EA5BA1795685 /* Pods-FlySound Bar-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlySound Bar-acknowledgements.plist"; sourceTree = "<group>"; };
-		B9D2B08018558C2811355D2A5269AD0B /* SwiftyBeaver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyBeaver-dummy.m"; sourceTree = "<group>"; };
+		B6392AD72F3788D696721447DEBBC836 /* SwiftyBeaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBeaver.debug.xcconfig; sourceTree = "<group>"; };
+		BB2DF6F4AC5847605F9BA15BDAED1C3E /* FrameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameView.swift; path = PKHUD/FrameView.swift; sourceTree = "<group>"; };
+		BC72E40E07737A95C7276B669DE800FF /* PKHUDSquareBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSquareBaseView.swift; path = PKHUD/PKHUDSquareBaseView.swift; sourceTree = "<group>"; };
+		BCC2C6DE80CBD2C0FDF94399BBF460DE /* RevealingSplashView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RevealingSplashView.release.xcconfig; sourceTree = "<group>"; };
 		BD56534C888FE385363934C9ABE6E7B4 /* RevealingSplashView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RevealingSplashView.framework; path = RevealingSplashView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C837455AFFAA0065DE8D96FB44D50C42 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
-		CD40D46FCFFCD7D3AA81ED8E80877F9F /* RevealingSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RevealingSplashView.h; path = RevealingSplashView/RevealingSplashView.h; sourceTree = "<group>"; };
-		D7C76CBD29CB153E6899903EAA103E26 /* SwiftyBeaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBeaver.debug.xcconfig; sourceTree = "<group>"; };
-		E441ED89DA44D631CF8A247A4C563BAD /* BaseDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDestination.swift; path = Sources/BaseDestination.swift; sourceTree = "<group>"; };
-		F2FF199674212D5A5E66B1CD498B3725 /* RevealingSplashView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RevealingSplashView.release.xcconfig; sourceTree = "<group>"; };
-		F47F03266A318D981BB0A580C9ED98D3 /* SwiftyBeaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBeaver.release.xcconfig; sourceTree = "<group>"; };
+		BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PKHUDResources.bundle; path = "PKHUD-PKHUDResources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D6268C58CFEDF5FAB802978FA413DC /* WindowRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowRootViewController.swift; path = PKHUD/WindowRootViewController.swift; sourceTree = "<group>"; };
+		C16EE98323D4401AF56E15340E7AAB15 /* PKHUDAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimation.swift; path = PKHUD/PKHUDAnimation.swift; sourceTree = "<group>"; };
+		C51175E16C3BD9508955E37310278288 /* PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PKHUD-Info.plist"; sourceTree = "<group>"; };
+		C66995E3F56D62F45B7AF9D05A5D5EE0 /* SwiftyBeaver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-prefix.pch"; sourceTree = "<group>"; };
+		CBF1309D2F4C62CFDFA5F98A45F7F3A2 /* RevealingSplashView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RevealingSplashView.modulemap; sourceTree = "<group>"; };
+		CC9E6A25937CA73A45A5F4945CD7BE0D /* PKHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PKHUD-dummy.m"; sourceTree = "<group>"; };
+		D281586209B452EB51AB3D7F2C5ACF2A /* Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64.swift; path = Sources/Base64.swift; sourceTree = "<group>"; };
+		D328C68E5A3E06893FA7F08367B4E482 /* RevealingSplashView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RevealingSplashView.swift; path = RevealingSplashView/RevealingSplashView.swift; sourceTree = "<group>"; };
+		D4EF6B81D885B4B0DF5D7E4AE900D077 /* RevealingSplashView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RevealingSplashView.debug.xcconfig; sourceTree = "<group>"; };
+		D6509F322CA201828F4C2DA706711F4D /* ResourceBundle-PKHUDResources-PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PKHUDResources-PKHUD-Info.plist"; sourceTree = "<group>"; };
+		D6875773425046F940BA143361F4A430 /* SplashAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SplashAnimatable.swift; path = RevealingSplashView/SplashAnimatable.swift; sourceTree = "<group>"; };
+		DD12BA67644A840EE4877DC5FB296ABB /* RevealingSplashView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RevealingSplashView-umbrella.h"; sourceTree = "<group>"; };
+		DD99B2627B254C7871563F41815B1268 /* Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Window.swift; path = PKHUD/Window.swift; sourceTree = "<group>"; };
+		E52100E584EF31FB98C28068DBFEEEA1 /* PKHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.release.xcconfig; sourceTree = "<group>"; };
+		F45244DFF6E1CBDB22293137D9480CB1 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyBeaver.swift; path = Sources/SwiftyBeaver.swift; sourceTree = "<group>"; };
 		F691C5AD4A65E78EBCF9B28C28EBC003 /* Pods-FlySound Bar-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlySound Bar-frameworks.sh"; sourceTree = "<group>"; };
 		F83A2463181653A4556D19A7D1DB7BA1 /* Pods-FlySound Bar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlySound Bar.debug.xcconfig"; sourceTree = "<group>"; };
-		FB0939F4C01BAB5B9C5D516929B118D1 /* SwiftyBeaver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-prefix.pch"; sourceTree = "<group>"; };
+		FD515F4D97EFCFB743A87DE06F8B9BDD /* FileDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileDestination.swift; path = Sources/FileDestination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1781C0617F78F0361C47AF2F7ED6560C /* Frameworks */ = {
+		1C61CAA0A895DEAF797DF31B60E6312F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E906E944DCB7DE85716688CE72D677C /* Foundation.framework in Frameworks */,
+				736CDC46C989088EE1275153BE700A37 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5965CA0EC8E5353EE2EEBE4B07D4C053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766F7A424E267388A5C0898A61031720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F786D1942BEC12F8EE5AC6B9DA1A5520 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,38 +205,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14EFBEDD50FE09E01CA274B766D19C62 /* Pods */ = {
+		021687969E1EDE539C3D1E4660C1EC70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86C8195403CB3DAC4752B1CD6A9DC20E /* RevealingSplashView */,
-				1ECA2868798DADEFD81504237B0AEEF9 /* SwiftyBeaver */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		1ECA2868798DADEFD81504237B0AEEF9 /* SwiftyBeaver */ = {
-			isa = PBXGroup;
-			children = (
-				5E91080D6A0EF50A92EBE11457878639 /* AES256CBC.swift */,
-				08DB89EE86EE956268BD92038F55FB36 /* Base64.swift */,
-				E441ED89DA44D631CF8A247A4C563BAD /* BaseDestination.swift */,
-				A977845D9F3456CD286F0D7BA5C27DED /* ConsoleDestination.swift */,
-				20B6F794B326E122BB04F0C9E6EB5130 /* Extensions.swift */,
-				8091C62146BDC44DA5609BB5B359BA9E /* FileDestination.swift */,
-				C837455AFFAA0065DE8D96FB44D50C42 /* Filter.swift */,
-				AB5EE7B5917E38898A08A246242BEC65 /* FilterValidator.swift */,
-				5C8FD007B5235AA0E52D0EA492E9B990 /* GoogleCloudDestination.swift */,
-				3529F4346B5494F1FBC4AFBE79FACA19 /* SBPlatformDestination.swift */,
-				8EB4B332FEEEC1CDE2580E26E18CC551 /* SwiftyBeaver.swift */,
-				335B675224DE73CD1D8D7835ACF4183D /* Support Files */,
-			);
-			name = SwiftyBeaver;
-			path = SwiftyBeaver;
-			sourceTree = "<group>";
-		};
-		23B650E6382C029DB9CEECBFF2E315A7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */,
+				BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */,
 				5597A64F6A7F54EA5F1F391CB606B1D4 /* Pods_FlySound_Bar.framework */,
 				BD56534C888FE385363934C9ABE6E7B4 /* RevealingSplashView.framework */,
 				7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver.framework */,
@@ -165,33 +217,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		335B675224DE73CD1D8D7835ACF4183D /* Support Files */ = {
+		44CB41B9C3D5A652E3F7345D91C42717 /* RevealingSplashView */ = {
 			isa = PBXGroup;
 			children = (
-				8BAB373E36D0FF06862334A4857BAD9A /* SwiftyBeaver.modulemap */,
-				B9D2B08018558C2811355D2A5269AD0B /* SwiftyBeaver-dummy.m */,
-				1520FC87BDE864AA5D0A863BE213E54D /* SwiftyBeaver-Info.plist */,
-				FB0939F4C01BAB5B9C5D516929B118D1 /* SwiftyBeaver-prefix.pch */,
-				70E9437C70409FBD62C6ECEF069290B5 /* SwiftyBeaver-umbrella.h */,
-				D7C76CBD29CB153E6899903EAA103E26 /* SwiftyBeaver.debug.xcconfig */,
-				F47F03266A318D981BB0A580C9ED98D3 /* SwiftyBeaver.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyBeaver";
-			sourceTree = "<group>";
-		};
-		86C8195403CB3DAC4752B1CD6A9DC20E /* RevealingSplashView */ = {
-			isa = PBXGroup;
-			children = (
-				3AD3DD6639468F1B2E223B0D3D49B284 /* Animations.swift */,
-				CD40D46FCFFCD7D3AA81ED8E80877F9F /* RevealingSplashView.h */,
-				5909D3793CECEAE38306C7C61A179A83 /* RevealingSplashView.swift */,
-				1CAE37F0CC33EFECDC7E69F30C19EA1D /* SplashAnimatable.swift */,
-				0FB35AEC8845E65A723137E15425A086 /* SplashAnimationType.swift */,
-				B6F756333B783F06120C94556DA605E9 /* Support Files */,
+				01B57D7D7FD79ED10E7F64CB3C5DC2E7 /* Animations.swift */,
+				44EF1A52652DC5D44C7D4AECC03E9750 /* RevealingSplashView.h */,
+				D328C68E5A3E06893FA7F08367B4E482 /* RevealingSplashView.swift */,
+				D6875773425046F940BA143361F4A430 /* SplashAnimatable.swift */,
+				3D5410F252F1CC81DB580FB39BBB0077 /* SplashAnimationType.swift */,
+				C06A61E25778B2C3720AE014B6EDE8F8 /* Support Files */,
 			);
 			name = RevealingSplashView;
 			path = RevealingSplashView;
+			sourceTree = "<group>";
+		};
+		498F690C9A1DFC8066836971461369A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6FD55C02AB891FC2ED85BF879F65E9A /* PKHUD */,
+				44CB41B9C3D5A652E3F7345D91C42717 /* RevealingSplashView */,
+				C8F6A8C4519B32E5B163B9FCACC809CA /* SwiftyBeaver */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4BB31A0ED1F658D076028851C83B49F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3721EAA26CC596E8953ADAEE20AAFD74 /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		A15640A34904180F2449D4EC37CA3723 /* Pods-FlySound Bar */ = {
@@ -211,16 +266,32 @@
 			path = "Target Support Files/Pods-FlySound Bar";
 			sourceTree = "<group>";
 		};
-		B6F756333B783F06120C94556DA605E9 /* Support Files */ = {
+		BFEAD6187B9775AB8DA403B43B412A28 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C4E2F8D894AAFC5D8E2148F4A75346E /* RevealingSplashView.modulemap */,
-				5DAFD0D71E672247E8AA5689DF0767BF /* RevealingSplashView-dummy.m */,
-				205DE1EFC8AE305D03B9D750341655A9 /* RevealingSplashView-Info.plist */,
-				1C811F7EDEBF2AFBEA67B7EB82E9C75D /* RevealingSplashView-prefix.pch */,
-				5F75EF668853DF41727C3E86796590DA /* RevealingSplashView-umbrella.h */,
-				76FCF070C6DBA1B0E56675BF20901A67 /* RevealingSplashView.debug.xcconfig */,
-				F2FF199674212D5A5E66B1CD498B3725 /* RevealingSplashView.release.xcconfig */,
+				9AC4F3FD02837107025181418593D8D7 /* PKHUD.modulemap */,
+				CC9E6A25937CA73A45A5F4945CD7BE0D /* PKHUD-dummy.m */,
+				C51175E16C3BD9508955E37310278288 /* PKHUD-Info.plist */,
+				4E2014F32DC991952D1B7F6857F38439 /* PKHUD-prefix.pch */,
+				78A2C81379DEEFE9FDFA7D04E8A7B37E /* PKHUD-umbrella.h */,
+				9A8B4197C46385FDDC5905E138F5D643 /* PKHUD.debug.xcconfig */,
+				E52100E584EF31FB98C28068DBFEEEA1 /* PKHUD.release.xcconfig */,
+				D6509F322CA201828F4C2DA706711F4D /* ResourceBundle-PKHUDResources-PKHUD-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PKHUD";
+			sourceTree = "<group>";
+		};
+		C06A61E25778B2C3720AE014B6EDE8F8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBF1309D2F4C62CFDFA5F98A45F7F3A2 /* RevealingSplashView.modulemap */,
+				3984210B4A1D62B1BDC112D1B14BD0DE /* RevealingSplashView-dummy.m */,
+				2C80642F301C42407A2069DE04E4A1D4 /* RevealingSplashView-Info.plist */,
+				9A5C1FF23A2CA7B28104E98BB796EBF3 /* RevealingSplashView-prefix.pch */,
+				DD12BA67644A840EE4877DC5FB296ABB /* RevealingSplashView-umbrella.h */,
+				D4EF6B81D885B4B0DF5D7E4AE900D077 /* RevealingSplashView.debug.xcconfig */,
+				BCC2C6DE80CBD2C0FDF94399BBF460DE /* RevealingSplashView.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/RevealingSplashView";
@@ -234,13 +305,33 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C8F6A8C4519B32E5B163B9FCACC809CA /* SwiftyBeaver */ = {
+			isa = PBXGroup;
+			children = (
+				2E9046AA897811F7CD317A322C3A9D99 /* AES256CBC.swift */,
+				D281586209B452EB51AB3D7F2C5ACF2A /* Base64.swift */,
+				3189B08D9DCA4458847F22D967B76CC3 /* BaseDestination.swift */,
+				83A69A2EBF28F54484859DB326556913 /* ConsoleDestination.swift */,
+				0EC05988F92DBAA3578812DEF6E72B28 /* Extensions.swift */,
+				FD515F4D97EFCFB743A87DE06F8B9BDD /* FileDestination.swift */,
+				2A7DEC29D123535EA4B1D409859CBBB0 /* Filter.swift */,
+				51723D4078023DD810F7754B87E5A8DE /* FilterValidator.swift */,
+				1E2D436053106DFAA142FF37960373CD /* GoogleCloudDestination.swift */,
+				2A32B8E41C8813FD5C3DB5E1F5803E6B /* SBPlatformDestination.swift */,
+				F45244DFF6E1CBDB22293137D9480CB1 /* SwiftyBeaver.swift */,
+				DC9B6DDB487E4A15D09D9361842189C6 /* Support Files */,
+			);
+			name = SwiftyBeaver;
+			path = SwiftyBeaver;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				14EFBEDD50FE09E01CA274B766D19C62 /* Pods */,
-				23B650E6382C029DB9CEECBFF2E315A7 /* Products */,
+				498F690C9A1DFC8066836971461369A8 /* Pods */,
+				021687969E1EDE539C3D1E4660C1EC70 /* Products */,
 				D20B9555A7A770EDF3593A8E6559DF2D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -261,6 +352,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC9B6DDB487E4A15D09D9361842189C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14750A8B80779B70C671A4273A376724 /* SwiftyBeaver.modulemap */,
+				952E2E897A5B8CFE8DAE04AA2EFA267B /* SwiftyBeaver-dummy.m */,
+				7C78B926D7228BA7FEBBFD3DB9EEAD06 /* SwiftyBeaver-Info.plist */,
+				C66995E3F56D62F45B7AF9D05A5D5EE0 /* SwiftyBeaver-prefix.pch */,
+				8FAE7B57CE519C0F156E1AD772FBB448 /* SwiftyBeaver-umbrella.h */,
+				B6392AD72F3788D696721447DEBBC836 /* SwiftyBeaver.debug.xcconfig */,
+				65A98CC3A38637B91D3CEE5E47084191 /* SwiftyBeaver.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyBeaver";
+			sourceTree = "<group>";
+		};
+		E6FD55C02AB891FC2ED85BF879F65E9A /* PKHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BB2DF6F4AC5847605F9BA15BDAED1C3E /* FrameView.swift */,
+				8AED031437B8BE9BECA3A012DAF4AB86 /* HUD.swift */,
+				13AF43BCCA22369AD1CE1713547B0BC7 /* PKHUD.h */,
+				4170E9B311563ED336F2B2B74D4E79F9 /* PKHUD.swift */,
+				65A079B331EAF94B2C4202604F97AE0E /* PKHUDAnimating.swift */,
+				C16EE98323D4401AF56E15340E7AAB15 /* PKHUDAnimation.swift */,
+				6456334BC48576F8DF302B6A8BF18DBC /* PKHUDAssets.swift */,
+				3F29849F6D9114C382709DEA37982282 /* PKHUDErrorView.swift */,
+				04C3D7B283A11864E92718AD6959D795 /* PKHUDProgressView.swift */,
+				1E744303EA442D9BD33301007662CF18 /* PKHUDRotatingImageView.swift */,
+				BC72E40E07737A95C7276B669DE800FF /* PKHUDSquareBaseView.swift */,
+				75B10A629D07A80802016DCEE67A2C1E /* PKHUDSuccessView.swift */,
+				A9C95BE080C243BF56A8928032DC7678 /* PKHUDSystemActivityIndicatorView.swift */,
+				483AE9E52C9D03A2A81D765A426EB3ED /* PKHUDTextView.swift */,
+				7891F34236A7B6667B9FAB6DD645B4B8 /* PKHUDWideBaseView.swift */,
+				DD99B2627B254C7871563F41815B1268 /* Window.swift */,
+				C0D6268C58CFEDF5FAB802978FA413DC /* WindowRootViewController.swift */,
+				4BB31A0ED1F658D076028851C83B49F5 /* Resources */,
+				BFEAD6187B9775AB8DA403B43B412A28 /* Support Files */,
+			);
+			name = PKHUD;
+			path = PKHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -273,6 +406,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7127867AA7CD58A1BDF98E2EE2FBB6DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61829B94A26402F3C0BEAE7D075FF147 /* Pods-FlySound Bar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D323AD6E00D8FF3006CF68DF0312B2A7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,11 +422,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F270BC56C630D56F187376C1E3BD6483 /* Headers */ = {
+		D8254C544A8F81DBE6028766B85010C7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C4C982D8AA98C0A5BEAA245CE89F6B /* Pods-FlySound Bar-umbrella.h in Headers */,
+				9432D6D1CE40B94ACC42309A46DA4C4B /* PKHUD-umbrella.h in Headers */,
+				446493C8F226FA8CC9D4D706486FA605 /* PKHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,20 +452,40 @@
 			productReference = 7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		46687E11712C7330B691C247F69069B4 /* Pods-FlySound Bar */ = {
+		364873017BA37260EF589D44B6B73D21 /* PKHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA15C5AF7D63E0C77B3B1C2DE807DF8B /* Build configuration list for PBXNativeTarget "Pods-FlySound Bar" */;
+			buildConfigurationList = CF1F2FE4505305B2AD57B3C33848F4E0 /* Build configuration list for PBXNativeTarget "PKHUD" */;
 			buildPhases = (
-				F270BC56C630D56F187376C1E3BD6483 /* Headers */,
-				479814575598F28FE983C2A366525889 /* Sources */,
-				1781C0617F78F0361C47AF2F7ED6560C /* Frameworks */,
-				86072831D207C4B9E2FE2ACCCDD64A86 /* Resources */,
+				D8254C544A8F81DBE6028766B85010C7 /* Headers */,
+				D1491D3A27F6A01508D7198421E73BDC /* Sources */,
+				766F7A424E267388A5C0898A61031720 /* Frameworks */,
+				37FD88FFFFD02C5987264EF24DC0EA17 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				09ECB5B0AD507DCC2496F35C8BC7174B /* PBXTargetDependency */,
-				C04CAF973829B954B7F06DE2C9A9BB30 /* PBXTargetDependency */,
+				0B5AEB9E7BE93EEF65D812DA21A2B86D /* PBXTargetDependency */,
+			);
+			name = PKHUD;
+			productName = PKHUD;
+			productReference = 05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46687E11712C7330B691C247F69069B4 /* Pods-FlySound Bar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 513A20DA1DE694F8EBFB5F1A935233CE /* Build configuration list for PBXNativeTarget "Pods-FlySound Bar" */;
+			buildPhases = (
+				7127867AA7CD58A1BDF98E2EE2FBB6DB /* Headers */,
+				C094C7ED922E76EF49FC6D49A9842F6F /* Sources */,
+				1C61CAA0A895DEAF797DF31B60E6312F /* Frameworks */,
+				FB4D4ED0B8114D7DAD11437C2AA04FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21CE9D3BB06416FA251660676DCB3CE4 /* PBXTargetDependency */,
+				D342DDCD1BF437E85782AAD1EA58E9C6 /* PBXTargetDependency */,
+				924AEB75F572047C8A1738BB722A7E5C /* PBXTargetDependency */,
 			);
 			name = "Pods-FlySound Bar";
 			productName = "Pods-FlySound Bar";
@@ -348,6 +510,23 @@
 			productReference = BD56534C888FE385363934C9ABE6E7B4 /* RevealingSplashView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A87479FF8902694C7145DC60E11837E /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */;
+			buildPhases = (
+				1BAFE9CA1767C49CCA30ABD1382949C4 /* Sources */,
+				5965CA0EC8E5353EE2EEBE4B07D4C053 /* Frameworks */,
+				61C29A22F2D8A5D7115987E9EB433102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PKHUD-PKHUDResources";
+			productName = "PKHUD-PKHUDResources";
+			productReference = BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -366,10 +545,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 23B650E6382C029DB9CEECBFF2E315A7 /* Products */;
+			productRefGroup = 021687969E1EDE539C3D1E4660C1EC70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				364873017BA37260EF589D44B6B73D21 /* PKHUD */,
+				A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */,
 				46687E11712C7330B691C247F69069B4 /* Pods-FlySound Bar */,
 				A16BB753FC705C22DAFCD8B7C1071A09 /* RevealingSplashView */,
 				1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */,
@@ -385,10 +566,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86072831D207C4B9E2FE2ACCCDD64A86 /* Resources */ = {
+		37FD88FFFFD02C5987264EF24DC0EA17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771FF27CF9018A865BE6AA1C8FDD0646 /* PKHUDResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C29A22F2D8A5D7115987E9EB433102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A38E421D16111E6DE45070BA0F0A7E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +589,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB4D4ED0B8114D7DAD11437C2AA04FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1BAFE9CA1767C49CCA30ABD1382949C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F38E196797C73D328B4B719F776DF0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,14 +615,6 @@
 				941CF8600D86F37CEF165DA6E7F3134A /* RevealingSplashView.swift in Sources */,
 				334B4420C1D35AB5E97786B7EC59AF53 /* SplashAnimatable.swift in Sources */,
 				776C8675E6F20EE4F8C7D7344D670BB1 /* SplashAnimationType.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		479814575598F28FE983C2A366525889 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3484A92910297D992FF759BA17C1F049 /* Pods-FlySound Bar-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,20 +637,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C094C7ED922E76EF49FC6D49A9842F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F26A9A4B2F065FE7D378DE82112104 /* Pods-FlySound Bar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1491D3A27F6A01508D7198421E73BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB20EB5F12F78130500E8683C2214E11 /* FrameView.swift in Sources */,
+				0D0FC5FCA5DC6851AA0674A0F436F75C /* HUD.swift in Sources */,
+				A8EA6E398B7FC737D0D92A533D7677E5 /* PKHUD-dummy.m in Sources */,
+				180A266E2AF087B3E947058335E89CE0 /* PKHUD.swift in Sources */,
+				606FB101465BA0EC4F2ED1EDE8E152DD /* PKHUDAnimating.swift in Sources */,
+				675EC1A032DFDD820264B3AE47B297C2 /* PKHUDAnimation.swift in Sources */,
+				1F824E58DBB325F219AFB0C9451BE1C8 /* PKHUDAssets.swift in Sources */,
+				EF50980DA05BC44D9725C5702FDDD669 /* PKHUDErrorView.swift in Sources */,
+				54E7808DA4C495BFCA04EC8FA99EF06C /* PKHUDProgressView.swift in Sources */,
+				31F445BC870DC65B5DB15B8F51AE9E77 /* PKHUDRotatingImageView.swift in Sources */,
+				9C4229D5D1B5FC7606ECC49F776E64CD /* PKHUDSquareBaseView.swift in Sources */,
+				39A93C2CC130C7BBC883E0735F630671 /* PKHUDSuccessView.swift in Sources */,
+				E84C1832305BF7AA61C2E6F99C7369C0 /* PKHUDSystemActivityIndicatorView.swift in Sources */,
+				F2CC01B79708C6CC4DEA8FD3B308C4F7 /* PKHUDTextView.swift in Sources */,
+				148F4A8D0E9317AF7E814A558AC16AA7 /* PKHUDWideBaseView.swift in Sources */,
+				0B08DFF991597B12F4B73F5E699BC130 /* Window.swift in Sources */,
+				14035A7A6B8A825357C702BBE6C8848C /* WindowRootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09ECB5B0AD507DCC2496F35C8BC7174B /* PBXTargetDependency */ = {
+		0B5AEB9E7BE93EEF65D812DA21A2B86D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RevealingSplashView;
-			target = A16BB753FC705C22DAFCD8B7C1071A09 /* RevealingSplashView */;
-			targetProxy = 43C64D28650B6C91A2698C95896EBFCD /* PBXContainerItemProxy */;
+			name = "PKHUD-PKHUDResources";
+			target = A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */;
+			targetProxy = C7E4FF5E720A8106ADD14262653F5F38 /* PBXContainerItemProxy */;
 		};
-		C04CAF973829B954B7F06DE2C9A9BB30 /* PBXTargetDependency */ = {
+		21CE9D3BB06416FA251660676DCB3CE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PKHUD;
+			target = 364873017BA37260EF589D44B6B73D21 /* PKHUD */;
+			targetProxy = 522FE972F324593CB8A68DF4CD0291E1 /* PBXContainerItemProxy */;
+		};
+		924AEB75F572047C8A1738BB722A7E5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyBeaver;
 			target = 1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */;
-			targetProxy = 13CBE3568DDC6CDF84D35FAE8BC6D422 /* PBXContainerItemProxy */;
+			targetProxy = D94CB51CD39DD6709C57E758B1F1FC09 /* PBXContainerItemProxy */;
+		};
+		D342DDCD1BF437E85782AAD1EA58E9C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RevealingSplashView;
+			target = A16BB753FC705C22DAFCD8B7C1071A09 /* RevealingSplashView */;
+			targetProxy = BB59DCE0F915B30D6735291A5445D876 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -519,12 +759,10 @@
 			};
 			name = Release;
 		};
-		2DD3740B543BDD77ED44639CB4F18F8B /* Debug */ = {
+		20EA59A4E7274C91B82EFA44EBFB5CE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F83A2463181653A4556D19A7D1DB7BA1 /* Pods-FlySound Bar.debug.xcconfig */;
+			baseConfigurationReference = E52100E584EF31FB98C28068DBFEEEA1 /* PKHUD.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -534,30 +772,224 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
+				PRODUCT_MODULE_NAME = PKHUD;
+				PRODUCT_NAME = PKHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B80FCE19C6ABB2CDE4980CCA945A74E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8B4197C46385FDDC5905E138F5D643 /* PKHUD.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				IBSC_MODULE = PKHUD;
+				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PKHUDResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3701F1C15F937E45022657FD5AB3A793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4EF6B81D885B4B0DF5D7E4AE900D077 /* RevealingSplashView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RevealingSplashView/RevealingSplashView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView.modulemap";
+				PRODUCT_MODULE_NAME = RevealingSplashView;
+				PRODUCT_NAME = RevealingSplashView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		2FDAD179284AC38A2691D289F2777AC5 /* Release */ = {
+		44703F2EF60D433627EDF62D47701DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8B4197C46385FDDC5905E138F5D643 /* PKHUD.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
+				PRODUCT_MODULE_NAME = PKHUD;
+				PRODUCT_NAME = PKHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A339927CDA96C161B69FFDCE1CDF565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A98CC3A38637B91D3CEE5E47084191 /* SwiftyBeaver.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyBeaver;
+				PRODUCT_NAME = SwiftyBeaver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7BEC699ABFDADC58C05F2EF32F28D405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC2C6DE80CBD2C0FDF94399BBF460DE /* RevealingSplashView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RevealingSplashView/RevealingSplashView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView.modulemap";
+				PRODUCT_MODULE_NAME = RevealingSplashView;
+				PRODUCT_NAME = RevealingSplashView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		99DC3FF3251D5BA406E206E159600D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6392AD72F3788D696721447DEBBC836 /* SwiftyBeaver.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyBeaver;
+				PRODUCT_NAME = SwiftyBeaver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC30FD8F8104354756F980F794A004E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7638CA55E0A1D2B507425D2852A202A3 /* Pods-FlySound Bar.release.xcconfig */;
 			buildSettings = {
@@ -596,10 +1028,12 @@
 			};
 			name = Release;
 		};
-		3701F1C15F937E45022657FD5AB3A793 /* Debug */ = {
+		C47A5875A925085838655C68AE7B105D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76FCF070C6DBA1B0E56675BF20901A67 /* RevealingSplashView.debug.xcconfig */;
+			baseConfigurationReference = F83A2463181653A4556D19A7D1DB7BA1 /* Pods-FlySound Bar.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -609,134 +1043,45 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RevealingSplashView/RevealingSplashView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView.modulemap";
-				PRODUCT_MODULE_NAME = RevealingSplashView;
-				PRODUCT_NAME = RevealingSplashView;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlySound Bar/Pods-FlySound Bar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7A339927CDA96C161B69FFDCE1CDF565 /* Release */ = {
+		DC31B3046484BBDD1B10CC1D3F768610 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F47F03266A318D981BB0A580C9ED98D3 /* SwiftyBeaver.release.xcconfig */;
+			baseConfigurationReference = E52100E584EF31FB98C28068DBFEEEA1 /* PKHUD.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				IBSC_MODULE = PKHUD;
+				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyBeaver;
-				PRODUCT_NAME = SwiftyBeaver;
+				PRODUCT_NAME = PKHUDResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
-		};
-		7BEC699ABFDADC58C05F2EF32F28D405 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2FF199674212D5A5E66B1CD498B3725 /* RevealingSplashView.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RevealingSplashView/RevealingSplashView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView.modulemap";
-				PRODUCT_MODULE_NAME = RevealingSplashView;
-				PRODUCT_NAME = RevealingSplashView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		99DC3FF3251D5BA406E206E159600D88 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7C76CBD29CB153E6899903EAA103E26 /* SwiftyBeaver.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyBeaver;
-				PRODUCT_NAME = SwiftyBeaver;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -805,6 +1150,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2A87479FF8902694C7145DC60E11837E /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B80FCE19C6ABB2CDE4980CCA945A74E /* Debug */,
+				DC31B3046484BBDD1B10CC1D3F768610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2C6B51E34A0129A0E1C6878ABDC01FAB /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -823,20 +1177,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		513A20DA1DE694F8EBFB5F1A935233CE /* Build configuration list for PBXNativeTarget "Pods-FlySound Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47A5875A925085838655C68AE7B105D /* Debug */,
+				BC30FD8F8104354756F980F794A004E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF1F2FE4505305B2AD57B3C33848F4E0 /* Build configuration list for PBXNativeTarget "PKHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44703F2EF60D433627EDF62D47701DFF /* Debug */,
+				20EA59A4E7274C91B82EFA44EBFB5CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E0EF856EB00AD6466ED18368545F7459 /* Build configuration list for PBXNativeTarget "RevealingSplashView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3701F1C15F937E45022657FD5AB3A793 /* Debug */,
 				7BEC699ABFDADC58C05F2EF32F28D405 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA15C5AF7D63E0C77B3B1C2DE807DF8B /* Build configuration list for PBXNativeTarget "Pods-FlySound Bar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2DD3740B543BDD77ED44639CB4F18F8B /* Debug */,
-				2FDAD179284AC38A2691D289F2777AC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

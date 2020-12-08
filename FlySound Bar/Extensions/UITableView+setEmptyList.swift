@@ -17,12 +17,10 @@ extension UITableView {
         messageLabel.sizeToFit()
 
         backgroundView = messageLabel
-        separatorStyle = .none
     }
 
     func resetList() {
         backgroundView = nil
-        separatorStyle = .singleLine
         reloadData()
     }
 }

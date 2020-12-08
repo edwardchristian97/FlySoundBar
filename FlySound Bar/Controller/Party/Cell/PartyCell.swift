@@ -17,6 +17,8 @@ final class PartyCell: UITableViewCell {
         setupViews()
         nameLabel.text = party.name
         dateLabel.text = party.date?.formatDate()
+        incomeLabel.text = "\(party.income) RON"
+        incomeLabel.textColor = UIColor(named: "FlySoundGreen")
         
         if let imageData = party.image {
             coverImageView.image = UIImage(data: imageData)

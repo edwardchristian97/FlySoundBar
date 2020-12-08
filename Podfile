@@ -8,4 +8,5 @@ target 'FlySound Bar' do
   # Pods for FlySound Bar
   pod 'SwiftyBeaver'
   pod 'RevealingSplashView'
+  pod 'PKHUD'
 end

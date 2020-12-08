@@ -9,14 +9,15 @@ final class PartyViewModel {
 
     private var context = CoreDataStack.shared.managedObjectContext
     private var parties: [Party] {
+        var parties = [Party]()
         do {
-            return try context.fetch(Party.fetchRequest())
+            parties = try context.fetch(Party.fetchRequest())
         } catch(let error) {
             log.error(error.localizedDescription)
-            return []
         }
-    }
 
+        return parties.sorted(by: { $0.date?.compare($1.date ?? Date()) == .orderedDescending })
+    }
 }
 
 // MARK: Functions
@@ -35,17 +36,11 @@ extension PartyViewModel {
         }
     }
 
-    func registerParty(_ partyDTO: PartyDTO) {
-        let party = Party(context: context)
-        party.id = partyDTO.id
-        party.name = partyDTO.name
-        party.date = partyDTO.date
-        party.image = partyDTO.image
-
+    func updateTotal(_ total: Int64, forParty party: Party) {
+        party.income = total
         do {
             try context.save()
-            log.info("Registered Party: \(party.name ?? "-")")
-        } catch(let error) {
+        } catch {
             log.error(error.localizedDescription)
         }
     }

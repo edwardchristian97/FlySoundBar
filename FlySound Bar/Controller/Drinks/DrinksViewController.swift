@@ -15,11 +15,6 @@ final class DrinksViewController: UIViewController {
     }
 }
 
-// MARK: Functions
-extension DrinksViewController {
-
-}
-
 // MARK: Actions
 extension DrinksViewController {
 
