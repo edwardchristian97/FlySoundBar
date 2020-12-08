@@ -23,8 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             dataManagement.registerPredefinedDrinks()
         }
 
-        let test = dataM
-
         return true
     }
 
